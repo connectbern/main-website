@@ -164,7 +164,43 @@ export const t = {
         "footer.follow-us": "Folge uns",
         "team-title": "Unser Team",
         "team-p1": "Lerne das Team hinter Connect Bern kennen! Wir sind eine Gruppe leidenschaftlicher Freiwilliger, die sich dafür einsetzen, Menschen dabei zu helfen, ihre Gemeinschaft in und um die Stadt Bern zu entdecken und sich zu vernetzen.",
-        "team-p2": "Weitere Details zu unseren Mitgliedern werden hier in Kürze hinzugefügt."
+        "team-p2": "Weitere Details zu unseren Mitgliedern werden hier in Kürze hinzugefügt.",
+        "info-title": "Infos & FAQ",
+        "info-intro": "Hier findest du alles Wichtige auf einen Blick: unsere Gruppenrichtlinien, wie die Kaution funktioniert, unsere Foto- und Nutzungshinweise und Antworten auf häufige Fragen.",
+        "info-guidelines-title": "Gruppenrichtlinien",
+        "info-guidelines-intro": "Damit sich alle wohlfühlen, halten wir uns an ein paar einfache Grundsätze:",
+        "info-guidelines": [
+            "Sei freundlich und respektvoll. Alle sind willkommen, egal woher du kommst oder welche Sprache du sprichst.",
+            "Hab echtes Interesse an anderen. Diese Räume sind dafür da, neue Leute kennenzulernen, nicht für Werbung oder Verkauf.",
+            "Keine Belästigung, Diskriminierung oder Hassrede. Wir haben dafür null Toleranz.",
+            "Halte den Raum sauber und respektiere die Menschen, die ihn betreuen.",
+            "Was hier geteilt wird, bleibt hier. Respektiere die Privatsphäre der anderen.",
+            "Wenn dir etwas auffällt, das nicht passt, sag uns Bescheid. Wir sind für dich da."
+        ],
+        "info-deposit-title": "Die Kaution erklärt",
+        "info-deposit-info": "Für einige Events bitten wir um eine kleine Kaution (meist 10 bis 20 CHF), um deinen Platz zu sichern. Das hilft, kurzfristige Absagen zu vermeiden, die für andere unfair sein können, die teilnehmen wollten, aber keinen Platz mehr hatten. Du kannst die Kaution nach dem Event zurückfordern oder als Spende anbieten, um den Raum zu unterstützen (sie hilft, Miete, Getränke, Essen und zukünftige Events zu decken). Die Zahlungsdetails findest du jeweils im Anmeldeformular.",
+        "info-deposit-alternative": "Wenn du lieber keine Kaution zahlen möchtest, kannst du trotzdem teilnehmen, falls ein Platz frei wird. Sag uns einfach Bescheid.",
+        "info-photos-title": "Fotos & Nutzung",
+        "info-photos-body": "Bei unseren Events und in unserem Raum machen wir manchmal Fotos und Videos, um die Momente festzuhalten und das Projekt zu teilen. Diese können auf unserer Webseite und in unseren sozialen Medien erscheinen. Wenn du nicht fotografiert werden möchtest, sag uns einfach vor Ort Bescheid. Das ist völlig in Ordnung und wir respektieren das. Möchtest du, dass ein bereits veröffentlichtes Bild entfernt wird, kontaktiere uns und wir kümmern uns darum.",
+        "info-faq-title": "Häufige Fragen",
+        "info-faq": [
+            {
+                "q": "Wo findet das statt? Wie bekomme ich die Adresse?",
+                "a": "Schreib uns auf WhatsApp oder tritt der jeweiligen WhatsApp-Gruppe bei, dort teilen wir die genaue Adresse und alle Updates. Wenn du zum ersten Mal kommst, schreib uns bitte zuerst, damit wir sicher sein können, dass jemand da ist."
+            },
+            {
+                "q": "Was kostet das?",
+                "a": "Die meisten Dinge sind gratis. Bei manchen Events bitten wir um eine kleine, rückerstattbare Kaution (siehe oben). Wir sind ein Freiwilligenprojekt und freuen uns über freiwillige Spenden, die helfen, den Raum am Leben zu halten."
+            },
+            {
+                "q": "Muss ich jemanden mitbringen oder die Sprache sprechen?",
+                "a": "Nein. Komm einfach so, wie du bist. Du musst niemanden mitbringen und kein Deutsch sprechen, viele von uns wechseln zwischen Deutsch und Englisch."
+            },
+            {
+                "q": "Wie kann ich mithelfen?",
+                "a": "Wir freuen uns immer über helfende Hände. Schau auf der Seite \"Wie kann ich helfen?\" vorbei oder schreib uns direkt."
+            }
+        ]
     },
     en: {
         "search-groups": "Search groups...",
@@ -331,6 +367,42 @@ export const t = {
         "footer.follow-us": "Follow us",
         "team-title": "Meet our Team",
         "team-p1": "Meet the team behind Connect Bern! We are a group of passionate volunteers dedicated to helping people discover and connect with their community in and around the city of Bern.",
-        "team-p2": "More details about our members will be added here soon."
+        "team-p2": "More details about our members will be added here soon.",
+        "info-title": "Info & FAQ",
+        "info-intro": "Here you'll find everything important at a glance: our group guidelines, how the deposit works, our photo and usage notes, and answers to common questions.",
+        "info-guidelines-title": "Group Guidelines",
+        "info-guidelines-intro": "So everyone feels welcome, we follow a few simple principles:",
+        "info-guidelines": [
+            "Be kind and respectful. Everyone is welcome, no matter where you are from or what language you speak.",
+            "Show genuine interest in others. These spaces are for meeting new people, not for advertising or selling.",
+            "No harassment, discrimination or hate speech. We have zero tolerance for it.",
+            "Keep the space tidy and respect the people who look after it.",
+            "What is shared here stays here. Respect each other's privacy.",
+            "If something feels off, let us know. We are here for you."
+        ],
+        "info-deposit-title": "The deposit explained",
+        "info-deposit-info": "For some events we ask for a small deposit (usually 10 to 20 CHF) to secure your spot. This helps avoid last-minute no-shows, which can be unfair to others who wanted to join but couldn't because the spot was already taken. You can reclaim the deposit after the event or offer it as a donation to support the space (it helps cover rent, drinks, food and future events). Payment details are in each registration form.",
+        "info-deposit-alternative": "If you prefer not to pay the deposit, you may still join if a spot becomes available. Just let us know.",
+        "info-photos-title": "Photos & Usage",
+        "info-photos-body": "At our events and in our space we sometimes take photos and videos to capture the moments and share the project. These may appear on our website and social media. If you would rather not be photographed, just let us know on site. That is completely fine and we will respect it. If you would like a photo that is already published to be removed, contact us and we will take care of it.",
+        "info-faq-title": "FAQ",
+        "info-faq": [
+            {
+                "q": "Where does it take place? How do I get the address?",
+                "a": "Write to us on WhatsApp or join the relevant WhatsApp group, where we share the exact address and all updates. If it is your first time, please write to us first so we can make sure someone is there."
+            },
+            {
+                "q": "How much does it cost?",
+                "a": "Most things are free. For some events we ask for a small, refundable deposit (see above). We are a volunteer project and welcome voluntary donations that help keep the space alive."
+            },
+            {
+                "q": "Do I need to bring someone or speak the language?",
+                "a": "No. Just come as you are. You don't need to bring anyone or speak German, many of us switch between German and English."
+            },
+            {
+                "q": "How can I help?",
+                "a": "We always appreciate helping hands. Check out the \"How can I help?\" page or write to us directly."
+            }
+        ]
     }
 }
