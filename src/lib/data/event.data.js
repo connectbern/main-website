@@ -409,6 +409,17 @@ const RECURRING_EVENTS_BY_OTHERS = [
         link: 'https://www.meetup.com/eruptlounge/events/calendar/'
     },
     {
+        title: { de: 'Brettspielabend im Drachenäscht', en: 'Board Game Evening at Drachenäscht' },
+        date: getNextWeekday(2),
+        recurring: 'weekly',
+        time: '19:00',
+        description: {
+            de: 'Offener Brettspielabend im Drachenäscht in Bern. Komm vorbei, lern neue Spiele und neue Leute kennen. 🎲',
+            en: 'Open board game evening at Drachenäscht in Bern. Drop by, try new games and meet new people. 🎲'
+        },
+        link: 'https://drachenaescht.ch/'
+    },
+    {
         title: { de: 'English Speaking Club', en: 'English Speaking Club' },
         date: getNextWeekday(5),
         recurring: 'weekly',
