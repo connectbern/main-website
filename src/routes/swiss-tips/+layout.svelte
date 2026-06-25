@@ -52,6 +52,10 @@
         {
             name: "Looking for a Flat?",
             link: "looking-for-flat"
+        },
+        {
+            name: "Repair Café",
+            link: "random-tips"
         }
     ];
 </script>
