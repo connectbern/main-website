@@ -68,15 +68,20 @@
     }
 
     .gradient {
-        background: linear-gradient(120deg, skyblue, rgb(162, 128, 218));
-        background-position: center;
-        background-size: cover;
+        background: linear-gradient(120deg, skyblue, rgb(162, 128, 218), rgb(99, 162, 222), skyblue);
+        background-size: 300% 300%;
         background-repeat: no-repeat;
         inset: 0;
         position: fixed;
         z-index: -2;
         opacity: 1;
-        animation: glow 40s infinite linear;
+        animation: gradientShift 40s ease-in-out infinite;
+    }
+
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
     .bg {
