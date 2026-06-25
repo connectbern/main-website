@@ -5,6 +5,17 @@
     import { MenuData, StackedMenuData } from "$lib/data/MenuData.js";
     import AppBanner from "$lib/components/banner/AppBanner.svelte";
     $: language = $currentLanguage;
+
+    // Songs/videos shown in the "vibe" section. Add another cool song by
+    // dropping a new entry here (id = the YouTube video id, start = optional
+    // start time in seconds).
+    const vibeVideos = [
+        { id: '2Q46aER0758', start: 69, params: 'si=Gp7ZbHj06mBTCA4H', title: 'Connect Bern vibe' },
+        // "The Bare Necessities" - Baloo the bear singing to Mowgli, a nod to
+        // Bern's bear. Paste the verified YouTube video id below to publish it.
+        { id: '', start: 0, params: '', title: 'Mowgli & Baloo, the bear song' },
+    ];
+    $: visibleVibeVideos = vibeVideos.filter((v) => v.id);
 </script>
 
 <section class="landing">
@@ -49,16 +60,18 @@
 <section class="vibe-section">
     <p class="vibe-question">{language === 'de' ? 'Fragst du dich, ob du hierher gehörst?' : 'Are you wondering if you belong here?'}</p>
     <p class="vibe-sub">{language === 'de' ? 'Überspring die Worte. Fühl es einfach.' : 'Skip the words for now. Feel it instead.'}</p>
-    <div class="vibe-video-wrap">
-        <iframe
-            src="https://www.youtube.com/embed/2Q46aER0758?si=Gp7ZbHj06mBTCA4H&start=69&autoplay=0"
-            title="Connect Bern vibe"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-        ></iframe>
-    </div>
+    {#each visibleVibeVideos as video}
+        <div class="vibe-video-wrap">
+            <iframe
+                src={`https://www.youtube.com/embed/${video.id}?${video.params ? video.params + '&' : ''}start=${video.start}&autoplay=0`}
+                title={video.title}
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+        </div>
+    {/each}
     <p class="vibe-label">{language === 'de' ? 'Zugehörigkeit ist ein Gefühl. Lass uns es gemeinsam finden.' : 'Belonging is a feeling. Let\'s find it together.'}</p>
 </section>
 
