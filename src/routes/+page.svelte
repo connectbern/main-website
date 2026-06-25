@@ -1,10 +1,48 @@
 
 <script>
     import { t } from "$lib/locales/translations.js";
+    import { date_trans } from "$lib/locales/dateTranslations.js";
     import { currentLanguage } from '$lib/stores/languageStore';
     import { MenuData, StackedMenuData } from "$lib/data/MenuData.js";
+    import { EVENT_DATA } from "$lib/data/event.data.js";
     import AppBanner from "$lib/components/banner/AppBanner.svelte";
     $: language = $currentLanguage;
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    $: nextEvent = EVENT_DATA
+        .filter(event => {
+            if (event.organizer !== 'connectbern' || event.hidden) return false;
+            const eventDate = new Date(event.date);
+            eventDate.setHours(0, 0, 0, 0);
+            return eventDate >= today;
+        })
+        .sort((a, b) => a.date - b.date)[0];
+
+    $: formatDate = (date) => {
+        const dayName = date_trans[language].days[date.getDay()];
+        const day = date.getDate();
+        const month = date_trans[language].months[date.getMonth()];
+        const year = date.getFullYear();
+
+        return language === 'de'
+            ? `${dayName}, ${day}. ${month} ${year}`
+            : `${dayName}, ${month} ${day}, ${year}`;
+    };
+
+    $: getDaysUntil = (date) => {
+        const dateClone = new Date(date);
+        dateClone.setHours(0, 0, 0, 0);
+        const diffTime = dateClone - today;
+        return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    };
+
+    $: getDaysUntilText = (days) => {
+        if (days === 0) return language === 'de' ? 'Heute!' : 'Today!';
+        if (days === 1) return language === 'de' ? 'Morgen' : 'Tomorrow';
+        return language === 'de' ? `in ${days} Tagen` : `in ${days} days`;
+    };
 </script>
 
 <section class="landing">
@@ -45,6 +83,27 @@
     </div>
 </section>
 
+{#if nextEvent}
+    <section class="next-event-section">
+        <a
+            class="next-event-card"
+            href={nextEvent.link}
+            target={nextEvent.link.startsWith('http') ? '_blank' : '_self'}
+            rel={nextEvent.link.startsWith('http') ? 'noopener noreferrer' : ''}
+        >
+            <span class="next-event-label">{t[language]["next-event-label"]}</span>
+            <h3 class="next-event-title">{nextEvent.title[language]}</h3>
+            <div class="next-event-meta">
+                <span class="next-event-date">📅 {formatDate(nextEvent.date)}</span>
+                {#if nextEvent.time}
+                    <span class="next-event-time">⏰ {nextEvent.time}</span>
+                {/if}
+            </div>
+            <span class="next-event-badge">{getDaysUntilText(getDaysUntil(nextEvent.date))}</span>
+        </a>
+        <a class="see-all-events-btn" href="/events">{t[language]["see-all-events"]}</a>
+    </section>
+{/if}
 
 <section class="vibe-section">
     <p class="vibe-question">{language === 'de' ? 'Fragst du dich, ob du hierher gehörst?' : 'Are you wondering if you belong here?'}</p>
@@ -267,6 +326,83 @@
 
     .stacked-menu-title {
         font-size: 0.95rem;
+    }
+
+    /* Next Event Section */
+    .next-event-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding: 2rem 1rem 1rem;
+        width: 100%;
+    }
+    .next-event-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        max-width: 520px;
+        padding: 1.5rem;
+        border-radius: 14px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.04));
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 6px rgba(0,0,0,.35);
+        transition: transform .08s ease, box-shadow .08s ease;
+    }
+    .next-event-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255,255,255,.35);
+    }
+    .next-event-label {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        opacity: 0.7;
+    }
+    .next-event-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.3;
+    }
+    .next-event-meta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1.25rem;
+        font-size: 1rem;
+        opacity: 0.95;
+    }
+    .next-event-badge {
+        margin-top: 0.25rem;
+        padding: 0.4rem 1rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        border-radius: 999px;
+        background: linear-gradient(135deg, rgba(108, 72, 167, 0.4), rgba(58, 152, 189, 0.4));
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .see-all-events-btn {
+        display: inline-block;
+        width: auto;
+        padding: 0.7rem 1.4rem;
+        border-radius: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(rgba(255,255,255,.18), rgba(255,255,255,.06));
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        box-shadow: 0 2px 6px rgba(0,0,0,.35);
+        transition: transform .08s ease, box-shadow .08s ease;
+    }
+    .see-all-events-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255,255,255,.35);
     }
 
     /* Vibe Section */
