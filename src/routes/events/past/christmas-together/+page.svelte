@@ -100,8 +100,9 @@
             <p class="date">{content[lang].date}</p>
             <p class="time">{content[lang].time}</p>
 
-            <div class="imageContainer">
+            <div class="imageGallery">
                 <img src="/images/peru-food.png" alt="Peruvian Food" class="eventImage" />
+                <img src="/images/christmas-together-group.jpg" alt="Group photo from Christmas Together dinner in Bern" class="eventImage" />
             </div>
 
             <p class="description">
@@ -268,10 +269,13 @@
         border: 1px solid rgba(255, 215, 0, 0.3);
     }
 
-    .imageContainer {
+    .imageGallery {
         display: flex;
+        flex-direction: row;
+        gap: 1em;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         margin: 2em 0;
     }
 
