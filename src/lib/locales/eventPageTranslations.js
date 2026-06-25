@@ -21,7 +21,11 @@ export const t = {
         "optional-paid-event-tooltip": "Diese Veranstaltung bietet explizit optionale kostenpflichtige Angebote (z.B. Essen, Kaution) oder empfohlene Spenden an.",
         "paid-event-tooltip": "Diese Veranstaltung ist kostenpflichtig, aber das Geld geht nicht an Connect Bern.",
         "more-info": "Mehr Info",
-        "calendar.info.recurring-events": "ℹ️ Events mit diesem Icon 🔄 passieren regelmäßig. Gehe auf die Eventseite um mehr herauszufinden."
+        "calendar.info.recurring-events": "ℹ️ Events mit diesem Icon 🔄 passieren regelmäßig. Gehe auf die Eventseite um mehr herauszufinden.",
+        "attendance-title": "Wie viele Leute kommen? Verlauf",
+        "attendance-last-week": "Letzte Woche",
+        "attendance-people": "Leute",
+        "attendance-empty": "Noch keine Anwesenheitsdaten. Schau bald wieder vorbei!"
     },
     en: {
         "filter-chip-upcoming": "Upcoming",
@@ -45,6 +49,10 @@ export const t = {
         "optional-paid-event-tooltip": "This event explicitly offers optional paid elements (e.g., food, deposit) or suggested donations.",
         "paid-event-tooltip": "This event is paid, but the money does not go to Connect Bern.",
         "more-info": "More Info",
-        "calendar.info.recurring-events": "ℹ️ Events marked with 🔄 are happening regularly. Checkout the event page to find out more."
+        "calendar.info.recurring-events": "ℹ️ Events marked with 🔄 are happening regularly. Checkout the event page to find out more.",
+        "attendance-title": "How many people come? Trend",
+        "attendance-last-week": "Last week",
+        "attendance-people": "people",
+        "attendance-empty": "No attendance data yet. Check back soon!"
     }
 };
