@@ -69,6 +69,8 @@
         </div>
     </div>
 
+    <p class="positionsLink">{@html t[lang]['support-positions-link']}</p>
+
     <!-- Financial Support Section -->
     <div class="financialSection">
         <h2>{t[lang]['support-financial-title']}</h2>
@@ -230,6 +232,13 @@
         line-height: 1.6;
         opacity: 0.9;
         margin: 0;
+    }
+
+    .positionsLink {
+        text-align: center;
+        font-size: 1.15em;
+        margin: -2em 0 4em;
+        opacity: 0.95;
     }
 
     /* Financial Support */

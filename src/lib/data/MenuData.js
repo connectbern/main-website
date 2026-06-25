@@ -84,6 +84,15 @@ export const StackedMenuData = [
     },
     {
         title: {
+            en: "Open Positions",
+            de: "Offene Stellen"
+        },
+        slug: "open-positions",
+        img: "help.svg",
+        homeImg: "/navigation/help.svg"
+    },
+    {
+        title: {
             en: "Get in touch",
             de: "Schreib uns"
         },
