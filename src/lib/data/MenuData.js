@@ -48,6 +48,15 @@ export const MenuData = [
 export const StackedMenuData = [
     {
         title: {
+            en: "Gallery",
+            de: "Galerie"
+        },
+        slug: "gallery",
+        img: "gallery.svg",
+        homeImg: "/navigation/gallery.svg"
+    },
+    {
+        title: {
             en: "Cool places",
             de: "Coole Orte"
         },
