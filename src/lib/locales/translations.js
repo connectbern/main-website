@@ -2,6 +2,8 @@ export const t = {
     de: {
         "search-groups": "Gruppen durchsuchen...",
         "groups": "Gruppen",
+        "gallery-title": "Galerie",
+        "gallery-description": "Eindrücke von unseren Events und Treffen. Bilder und Videos aus der Connect Bern Community.",
         "places-description": "Hier sind einige Ideen, wo du gesellig sein kannst",
         "places-website": "Webseite",
         "places-map": "Karte",
@@ -170,6 +172,8 @@ export const t = {
         "search-groups": "Search groups...",
         "groups": "Groups",
         "swiss-tips-description": "Tips & Tricks for living in Bern and Switzerland! These tips are mainly for newcomers and might also be helpful for travelers and locals who might not have heard about a thing or two.",
+        "gallery-title": "Gallery",
+        "gallery-description": "Glimpses from our events and meetups. Photos and videos from the Connect Bern community.",
         "places-description": "Here are some ideas of where you can be social",
         "places-website": "Website",
         "places-map": "Map",
