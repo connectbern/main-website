@@ -429,6 +429,16 @@ const RECURRING_EVENTS_BY_OTHERS = [
         },
         link: 'https://patt.be'
     },
+    {
+        title: { de: 'EA Bern: Social & Discussion', en: 'EA Bern: Social & Discussion' },
+        date: getNextWeekday(4),
+        recurring: 'weekly',
+        description: {
+            de: 'Jeden zweiten Donnerstag, abwechselnd ein Social (in der Pittaria) und eine Discussion. Alle sind willkommen. Daten und Anmeldung findest du auf Luma.',
+            en: 'Every second Thursday, alternating between a Social (at the Pittaria) and a Discussion. All are welcome. Dates and registration are on Luma.'
+        },
+        link: 'https://luma.com/eabern?k=c'
+    },
 ];
 
 const FUTURE_EVENTS = [
