@@ -182,18 +182,6 @@ const PAST_EVENTS_2026 = [
         organizer: 'connectbern'
     },
     {
-        title: { de: 'CB Boardgame Night', en: 'CB Boardgame Night' },
-        date: new Date(2026, 2, 25, 18, 30),
-        time: '18:30',
-        description: {
-            de: 'Gesellschaftsspiele spielen bei Erupt Lounge, Parkterrasse 14 (3. Stock). Kostenlos. 🎲',
-            en: 'Board games at Erupt Lounge, Parkterrasse 14 (3rd floor). Free entry. 🎲'
-        },
-        link: '/events/past/cb-boardgame-night',
-        recurring: false,
-        organizer: 'connectbern'
-    },
-    {
         title: { de: 'Connect Bern Welcome Party', en: 'Connect Bern Welcome Party' },
         date: new Date(2026, 2, 24, 18, 0),
         time: '18:00',
@@ -311,6 +299,18 @@ const RECURRING_EVENTS = [
             en: 'Our weekly time for new people who want to see what the project is about! ☕🍰'
         },
         link: '/events/coffee-cake-connect',
+        organizer: 'connectbern'
+    },
+    {
+        title: { de: 'CB Boardgame Night', en: 'CB Boardgame Night' },
+        date: getNextWeekday(3),
+        time: '18:30',
+        recurring: 'weekly',
+        description: {
+            de: 'Gesellschaftsspiele spielen bei Erupt Lounge, Parkterrasse 14 (3. Stock). Kostenlos. 🎲',
+            en: 'Board games at Erupt Lounge, Parkterrasse 14 (3rd floor). Free entry. 🎲'
+        },
+        link: '/events/cb-boardgame-night',
         organizer: 'connectbern'
     },
 ];
