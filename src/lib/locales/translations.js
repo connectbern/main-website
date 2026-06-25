@@ -208,7 +208,7 @@ export const t = {
         "location-volunteers": "We're volunteers - please be patient with our response times! ❤️",
         "location-btn-whatsapp": "💬 WhatsApp",
         "location-btn-call": "📞 Call",
-        "location-call-first": "⚠️ <strong>Important:</strong> Please write or call us before your first visit. We're not always at the space, so message us first so someone is there to welcome you. If you're feeling adventurous, you can also join <a href='/map'>the space</a> online and check if anyone is home!",
+        "location-call-first": "👋 ⚠️ <strong>Important:</strong> Please write or call us before your first visit. We're not always at the space, so just give us a quick heads-up so someone is there to welcome you. And if you're feeling adventurous, you can also join <a href='/map'>the space</a> online and see if anyone's home!",
         "location-process": "🏠 <strong>Process:</strong> WhatsApp call → Fill form → Join welcome group → Someone confirms they can show you around",
         "location-whatsapp-message": "Hi, I would love to visit the Connect Bern project!",
         "location-visit-info": "☕ Come to <a href='/events/coffee-cake-connect'><strong>\"Coffee, Cake & Connect\"</strong></a> every Sunday at 4pm - our weekly time dedicated for new people who want to see what the project is about!",
