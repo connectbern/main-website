@@ -57,6 +57,15 @@ export const StackedMenuData = [
     },
     {
         title: {
+            en: "Co-Working",
+            de: "Coworking"
+        },
+        slug: "coworking",
+        img: "location.svg",
+        homeImg: "/navigation/location.svg"
+    },
+    {
+        title: {
             en: "Swiss Tips",
             de: "Swiss Tips"
         },
