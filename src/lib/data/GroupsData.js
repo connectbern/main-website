@@ -83,8 +83,8 @@ export const GroupsData = [
         },
         slug: "non-commercial-marketplaces",
         desc: {
-            de: "In diesem Kanal findest du die Link-Sammlung der unkommerziellen Markt-Plätze der Schweiz und zu vielen weiteren spezifischen Gruppen. 🙌🏼",
-            en: "In this channel you'll find a collection of links to non-commercial marketplaces in Switzerland and many other specific groups. 🙌🏼"
+            de: "\"Unko\" steht für unkommerziell. In diesem Kanal findest du eine Link-Sammlung zu den unkommerziellen Marktplätzen der Schweiz und zu vielen weiteren spezifischen Gruppen. 🙌🏼",
+            en: "\"Unko\" stands for unkommerziell (non-commercial). In this channel you'll find a collection of links to non-commercial marketplaces in Switzerland and many other specific groups. 🙌🏼"
         },
         img: "unko-links.jpg",
         type: "telegram",
@@ -130,8 +130,8 @@ export const GroupsData = [
         },
         slug: "non-commercial-marketplace",
         desc: {
-            de: "Gruppe zum Verschenken oder Austauschen. Mehr als 12000 Mitglieder.",
-            en: "A group for gifting or trading things. Over 12000 members."
+            de: "Eine grosse Berner Telegram-Gruppe, in der Leute Dinge gratis verschenken oder tauschen, ganz ohne Geld, um Abfall zu vermeiden.<br><br>Statt Sachen wegzuwerfen, gibst du sie jemandem weiter, der sie braucht. Mehr als 12000 Mitglieder.",
+            en: "A large Bern Telegram group where people give away or swap things for free, without any money, to reduce waste.<br><br>Instead of throwing things away, you pass them on to someone who needs them. Over 12000 members."
         },
         img: "marktplatz.webp",
         type: "telegram",
