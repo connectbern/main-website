@@ -8,6 +8,9 @@
 </script>
 
 <section class="landing">
+    <div class="hero">
+        <img class="hero-img" src="/images/connect-and-cheers-3.jpg" alt="Connect Bern community enjoying an event together" loading="eager" />
+    </div>
     <h1>Connect Bern</h1>
     <p class="subtitle">{@html t[language]["description"]}</p>
 
@@ -161,6 +164,19 @@
         opacity: 1;
         display: block;
         margin-bottom: 0.25rem;
+    }
+
+    .hero {
+        width: 100%;
+        max-width: 1100px;
+    }
+    .hero-img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+        box-shadow: 0 0 40px rgba(108, 72, 167, 0.45), 0 8px 32px rgba(0,0,0,0.45);
     }
 
     .menu-section {
@@ -317,6 +333,7 @@
     @media (max-width: 768px) {
         .vibe-question { font-size: 1.3rem; }
         .vibe-video-wrap { border-radius: 10px; }
+        .hero-img { height: 220px; }
     }
 
 
