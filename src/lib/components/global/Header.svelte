@@ -51,12 +51,10 @@
         p {
             display: none !important;
         }
-        .inv {
-            display: none !important;
-        }
         .header .side-wrapper {
-            flex-direction: column !important;
-            gap: 0 !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            gap: .25em !important;
         }
     }
 

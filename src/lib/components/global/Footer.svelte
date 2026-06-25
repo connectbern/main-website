@@ -1,6 +1,7 @@
 <script>
     import { t } from "$lib/locales/translations.js";
     import { currentLanguage } from '$lib/stores/languageStore';
+    import LanguageToggler from "$lib/components/global/LanguageToggler.svelte";
     $: language = $currentLanguage;
 
     const contactInfo = {
@@ -88,6 +89,11 @@
                 </a>
             </div>
         </div>
+    </div>
+
+    <div class="language-section">
+        <span class="language-label">{t[language]["footer.language"]}</span>
+        <LanguageToggler />
     </div>
 
     <div class="impressum-section">
@@ -188,6 +194,19 @@
 
     .contact-item.whatsapp:hover {
         background: rgba(37, 211, 102, 0.3);
+    }
+
+    .language-section {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25em;
+    }
+
+    .language-label {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9em;
     }
 
     .impressum-section {
