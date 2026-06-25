@@ -32,6 +32,14 @@
                 en: "7,000+ members - Both languages equally"
             },
             link: "https://www.facebook.com/groups/1939547412940225/"
+        },
+        {
+            name: "Bern - die schönste Stadt der Welt",
+            description: {
+                de: "Eine aktive Gruppe rund um die Stadt Bern",
+                en: "An active group about the city of Bern"
+            },
+            link: "https://www.facebook.com/groups/542084606163756/"
         }
     ];
 </script>

@@ -88,6 +88,9 @@
             <button class="filterPill" class:active={groupType === 'Facebook'} on:click={() => { groupType = 'Facebook'; handleGroupTypeChange(); }}>
                 <img src="/icons/facebook.svg" alt="Facebook" class="filterIcon" />
             </button>
+            <button class="filterPill" class:active={groupType === 'Signal'} on:click={() => { groupType = 'Signal'; handleGroupTypeChange(); }}>
+                <img src="/icons/signal.svg" alt="Signal" class="filterIcon" />
+            </button>
             <button class="filterPill" class:active={groupType === 'Multiplatform'} on:click={() => { groupType = 'Multiplatform'; handleGroupTypeChange(); }}>
                 {language === 'de' ? 'Multi' : 'Multi'}
             </button>
