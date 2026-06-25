@@ -84,6 +84,15 @@ export const StackedMenuData = [
     },
     {
         title: {
+            en: "Info & FAQ",
+            de: "Infos & FAQ"
+        },
+        slug: "about",
+        img: "info.svg",
+        homeImg: "/navigation/info.svg"
+    },
+    {
+        title: {
             en: "Get in touch",
             de: "Schreib uns"
         },
