@@ -84,6 +84,15 @@ export const StackedMenuData = [
     },
     {
         title: {
+            en: "Volunteer in Bern",
+            de: "Freiwilligenarbeit"
+        },
+        slug: "volunteer",
+        img: "info.svg",
+        homeImg: "/navigation/info.svg"
+    },
+    {
+        title: {
             en: "Get in touch",
             de: "Schreib uns"
         },
