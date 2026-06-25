@@ -481,6 +481,10 @@ export const EVENT_DATA = [
     ...RECURRING_EVENTS, ...FUTURE_EVENTS, ...RECURRING_EVENTS_BY_OTHERS
 ];
 
+export const PAST_EVENT_DATA = [
+    ...PAST_EVENTS_2025, ...PAST_EVENTS_2026
+];
+
 function getNextWeekday(dayOfWeek) {
     const today = new Date();
     const currentDay = today.getDay();

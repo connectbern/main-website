@@ -44,6 +44,8 @@
     $: getDaysUntilText = (days) => {
         if (days === 0) return lang === 'de' ? 'Heute!' : 'Today!';
         if (days === 1) return lang === 'de' ? 'Morgen' : 'Tomorrow';
+        if (days === -1) return lang === 'de' ? 'Gestern' : 'Yesterday';
+        if (days < 0) return lang === 'de' ? `vor ${-days} Tagen` : `${-days} days ago`;
         return lang === 'de' ? `in ${days} Tagen` : `in ${days} days`;
     };
 
