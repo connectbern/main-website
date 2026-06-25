@@ -53,8 +53,8 @@ export const GroupsData = [
         },
         slug: "language-exchange",
         desc: {
-            de: "Es gibt 3 Sprachenaustausch-Veranstaltungen in Bern, die wir kennen: 2 am Mittwoch (Connect Bern Haus & BlaBla) und 1 am Donnerstag. Übe verschiedene Sprachen und lerne neue Leute kennen!",
-            en: "There are 3 language exchange events in Bern that we know about: 2 on Wednesday (Connect Bern house & BlaBla) and 1 on Thursday. Practice different languages and meet new people!"
+            de: "Es gibt 3 Sprachenaustausch-Veranstaltungen in Bern, die wir kennen: Connect Bern Haus (meistens dienstags oder mittwochs), BlaBla (mittwochs) und einen am Donnerstag. Übe verschiedene Sprachen und lerne neue Leute kennen!",
+            en: "There are 3 language exchange events in Bern that we know about: Connect Bern house (usually Tuesdays or Wednesdays), BlaBla (Wednesdays) and one on Thursdays. Practice different languages and meet new people!"
         },
         img: "language-exchange-icon.jpg",
         type: "whatsapp",

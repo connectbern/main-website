@@ -1,12 +1,12 @@
 <svelte:head>
 	<title>Language Exchange di Berna • Events • Connect Bern</title>
-	<meta name="description" content="Join us every Tuesday for Language Exchange di Berna. Practice languages, meet people from all over the world, and make new friends at Connect Bern." />
+	<meta name="description" content="Join us, usually on Tuesdays or Wednesdays, for Language Exchange di Berna. Practice languages, meet people from all over the world, and make new friends at Connect Bern." />
 
 	<!-- Open Graph -->
 	<meta property="og:url" content="https://connectbern.ch/events/language-exchange-di-berna" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Language Exchange di Berna • Connect Bern" />
-	<meta property="og:description" content="Join us every Tuesday for Language Exchange di Berna. Practice languages, meet people from all over the world, and make new friends." />
+	<meta property="og:description" content="Join us, usually on Tuesdays or Wednesdays, for Language Exchange di Berna. Practice languages, meet people from all over the world, and make new friends." />
 	<meta property="og:image" content="https://connectbern.ch/images/language-exchange.jpeg" />
 
 	<!-- Twitter -->
@@ -14,7 +14,7 @@
 	<meta property="twitter:domain" content="connectbern.ch" />
 	<meta property="twitter:url" content="https://connectbern.ch/events/language-exchange-di-berna" />
 	<meta name="twitter:title" content="Language Exchange di Berna • Connect Bern" />
-	<meta name="twitter:description" content="Join us every Tuesday for Language Exchange di Berna. Practice languages, meet people from all over the world, and make new friends." />
+	<meta name="twitter:description" content="Join us, usually on Tuesdays or Wednesdays, for Language Exchange di Berna. Practice languages, meet people from all over the world, and make new friends." />
 	<meta name="twitter:image" content="https://connectbern.ch/images/language-exchange.jpeg" />
 </svelte:head>
 
@@ -26,12 +26,22 @@
     // Update this each week! Leave empty string to hide the organizer block.
     const organizerOfTheWeek = "";
 
+    // Update this each week! Set to the weekday this week's edition takes place,
+    // e.g. "tuesday" or "wednesday". Leave empty string to hide the "This week" line.
+    const dayThisWeek = "";
+
+    const dayNames = {
+        de: { monday: "Montag", tuesday: "Dienstag", wednesday: "Mittwoch", thursday: "Donnerstag", friday: "Freitag", saturday: "Samstag", sunday: "Sonntag" },
+        en: { monday: "Monday", tuesday: "Tuesday", wednesday: "Wednesday", thursday: "Thursday", friday: "Friday", saturday: "Saturday", sunday: "Sunday" }
+    };
+
     const content = {
         de: {
             title: "Language Exchange di Berna",
-            subtitle: "Jeden Dienstag um 19:00 Uhr",
-            description: "Triff Leute aus aller Welt, übe Sprachen und knüpfe echte Verbindungen. Jeden Dienstag im Connect Bern Space. Ob du Deutsch, Englisch, Französisch, Spanisch oder eine andere Sprache üben möchtest, du bist herzlich willkommen!",
-            schedule: "📅 Jeden Dienstag um 19:00 Uhr",
+            subtitle: "Meistens dienstags oder mittwochs um 19:00 Uhr",
+            description: "Triff Leute aus aller Welt, übe Sprachen und knüpfe echte Verbindungen. Meistens dienstags oder mittwochs im Connect Bern Space. Ob du Deutsch, Englisch, Französisch, Spanisch oder eine andere Sprache üben möchtest, du bist herzlich willkommen! Manchmal findet er nicht statt, schau in der WhatsApp Gruppe nach dem Tag dieser Woche.",
+            schedule: "📅 Meistens dienstags oder mittwochs um 19:00 Uhr",
+            thisWeek: "📌 Diese Woche am",
             location: "📍 Connect Bern Space",
             organizerLabel: "Organisatorinnen dieser Woche",
             organizerSub: "Sie führen euch durch den Abend 🌟",
@@ -43,16 +53,17 @@
             registerDesc: "Wir haben das Event auf diesen Plattformen. Wenn du ein Konto hast, registriere dich auch dort. Der Algorithmus mag es, wenn etwas passiert, und es hilft uns, mehr Menschen zu erreichen! 🚀",
             meetupLink: "Meetup",
             instagramLink: "Instagram",
-            groupTitle: "💬 Tritt unserer Language Exchange Gruppe bei!",
+            groupTitle: "💬 Tritt unserer Language Exchanges Gruppe bei!",
             groupDesc: "Bleib auf dem Laufenden, stell dich vor und vernetze dich mit anderen in unserer WhatsApp Gruppe.",
             groupBtn: "Zur Gruppe",
             closing: "Wir freuen uns darauf, dich kennenzulernen! 🌍✨"
         },
         en: {
             title: "Language Exchange di Berna",
-            subtitle: "Every Tuesday at 7:00 PM",
-            description: "Meet people from all over the world, practice languages, and make genuine connections. Every Tuesday at the Connect Bern Space. Whether you want to practice German, English, French, Spanish, or any other language, you're warmly welcome!",
-            schedule: "📅 Every Tuesday at 7:00 PM",
+            subtitle: "Usually Tuesdays or Wednesdays at 7:00 PM",
+            description: "Meet people from all over the world, practice languages, and make genuine connections. Usually Tuesdays or Wednesdays at the Connect Bern Space. Whether you want to practice German, English, French, Spanish, or any other language, you're warmly welcome! Sometimes it does not take place, check the WhatsApp group for this week's day.",
+            schedule: "📅 Usually Tuesdays or Wednesdays at 7:00 PM",
+            thisWeek: "📌 This week it's on",
             location: "📍 Connect Bern Space",
             organizerLabel: "Organizers of the Week",
             organizerSub: "Leading the evening for you 🌟",
@@ -64,7 +75,7 @@
             registerDesc: "We've registered the event on these platforms. If you have an account, please also register there. The algorithm likes it when something is happening, and it helps us reach more people! 🚀",
             meetupLink: "Meetup",
             instagramLink: "Instagram",
-            groupTitle: "💬 Join our Language Exchange Group!",
+            groupTitle: "💬 Join our Language Exchanges Group!",
             groupDesc: "Stay in the loop, introduce yourself, and connect with others in our WhatsApp group.",
             groupBtn: "Go to Group",
             closing: "We look forward to meeting you! 🌍✨"
@@ -92,6 +103,9 @@
 
             <div class="infoBox">
                 <p class="schedule">{content[lang].schedule}</p>
+                {#if dayThisWeek && dayNames[lang][dayThisWeek]}
+                <p class="thisWeek">{content[lang].thisWeek} {dayNames[lang][dayThisWeek]}</p>
+                {/if}
                 <p class="location">{content[lang].location}</p>
             </div>
 
@@ -240,6 +254,17 @@
         margin: 0.3em 0;
     }
 
+    .thisWeek {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin: 0.6em 0;
+        padding: 0.4em 0.8em;
+        display: inline-block;
+        border-radius: 0.6em;
+        background: rgba(76, 175, 80, 0.25);
+        color: rgba(150, 240, 150, 1);
+    }
+
     /* Organizer of the Week */
     .organizerBox {
         background: linear-gradient(135deg, rgba(255, 200, 50, 0.14), rgba(255, 130, 30, 0.08));
@@ -257,7 +282,10 @@
 
     .organizerStars {
         font-size: 1.1em;
+        line-height: 1.4;
         letter-spacing: 0.3em;
+        text-indent: 0.3em;
+        text-align: center;
         opacity: 0.6;
     }
 
@@ -289,7 +317,13 @@
     .languageFlags {
         margin-top: 0.6em;
         font-size: 1.6em;
-        letter-spacing: 0.1em;
+        line-height: 1.5;
+        letter-spacing: 0.18em;
+        text-indent: 0.18em;
+        text-align: center;
+        max-width: 100%;
+        word-break: keep-all;
+        overflow-wrap: break-word;
     }
 
     .contactBox {
