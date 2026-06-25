@@ -17,7 +17,7 @@
     $: lang = $currentLanguage;
 
     let eventView = 'list'; // 'list' | 'calendar'
-    let filterMode = 'connectbern'; // 'all' or 'connectbern'
+    let filterMode = 'connectbern'; // 'connectbern' | 'trips' | 'all'
     let isFloatingButtonHidden = false;
     let showWhyDifferentDialog = false;
     let showDisclaimer = true; // collapsable in mobile view
@@ -36,9 +36,13 @@
     });
 
     $: filteredEvents = ((events, filter) => {
-        return filter === 'connectbern'
-            ? events.filter(event => event.organizer === 'connectbern')
-            : events;
+        if (filter === 'connectbern') {
+            return events.filter(event => event.organizer === 'connectbern' && event.category !== 'trip');
+        }
+        if (filter === 'trips') {
+            return events.filter(event => event.category === 'trip');
+        }
+        return events;
     });
 
 
@@ -89,6 +93,12 @@
                         on:click={() => filterMode = 'connectbern'}
                 >
                     🏠 {t[lang].filterConnectBern}
+                </button>
+                <button
+                        class="filterBtn {filterMode === 'trips' ? 'active' : ''}"
+                        on:click={() => filterMode = 'trips'}
+                >
+                    🚌 {t[lang].filterTrips}
                 </button>
                 <button
                         class="filterBtn {filterMode === 'all' ? 'active' : ''}"

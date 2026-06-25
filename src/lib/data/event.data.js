@@ -231,7 +231,8 @@ const PAST_EVENTS_2026 = [
         },
         link: '/events/past/hiking',
         recurring: false,
-        organizer: 'connectbern'
+        organizer: 'connectbern',
+        category: 'trip'
     },
 ];
 
