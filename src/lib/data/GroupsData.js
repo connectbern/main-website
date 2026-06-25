@@ -160,8 +160,8 @@ export const GroupsData = [
         },
         slug: "active-facebook-groups",
         desc: {
-            de: "Eine Sammlung von aktiven Facebook-Gruppen in Bern, in denen du Leute finden kannst:<br><br><strong>What's Up Bern</strong> (11'000+ Mitglieder) - Hauptsächlich Englisch<br><strong>WasWieWo in Bern</strong> (9'000+ Mitglieder) - Hauptsächlich Deutsch<br><strong>People Of Bern</strong> (7'000+ Mitglieder) - Beide Sprachen gleichmässig",
-            en: "A collection of active Facebook groups in Bern where you can find people:<br><br><strong>What's Up Bern</strong> (11,000+ members) - Mainly English<br><strong>WasWieWo in Bern</strong> (9,000+ members) - Mainly German<br><strong>People Of Bern</strong> (7,000+ members) - Both languages equally"
+            de: "Eine Sammlung von aktiven Facebook-Gruppen in Bern, in denen du Leute finden kannst:<br><br><strong>What's Up Bern</strong> (11'000+ Mitglieder) - Hauptsächlich Englisch<br><strong>WasWieWo in Bern</strong> (9'000+ Mitglieder) - Hauptsächlich Deutsch<br><strong>People Of Bern</strong> (7'000+ Mitglieder) - Beide Sprachen gleichmässig<br><strong>Bern - die schönste Stadt der Welt</strong> - Eine aktive Gruppe rund um die Stadt Bern",
+            en: "A collection of active Facebook groups in Bern where you can find people:<br><br><strong>What's Up Bern</strong> (11,000+ members) - Mainly English<br><strong>WasWieWo in Bern</strong> (9,000+ members) - Mainly German<br><strong>People Of Bern</strong> (7,000+ members) - Both languages equally<br><strong>Bern - die schönste Stadt der Welt</strong> - An active group about the city of Bern"
         },
         img: "facebook-groups.svg",
         type: "facebook",
@@ -238,5 +238,33 @@ export const GroupsData = [
         img: "fire-community.webp",
         type: "other",
         link: "https://forum.mustachianpost.com/t/meetup-in-bern-for-coffee-beer-and-chat-about-fi-re-plans/8673/"
+    },
+    {
+        name: {
+            de: "Thirsty Thursday",
+            en: "Thirsty Thursday"
+        },
+        slug: "thirsty-thursday",
+        desc: {
+            de: "Eine lockere Gruppe, die sich am Donnerstag auf ein Getränk und etwas Geselligkeit in Bern trifft.",
+            en: "A relaxed group that meets up on Thursdays for a drink and some good company in Bern."
+        },
+        img: "lets-dine.jpg",
+        type: "whatsapp",
+        link: "https://chat.whatsapp.com/BYE4Zsolrl6DfA7U2XRLi4"
+    },
+    {
+        name: {
+            de: "Signal Gruppe",
+            en: "Signal Group"
+        },
+        slug: "signal-group",
+        desc: {
+            de: "Eine Community-Gruppe auf Signal, um sich zu vernetzen und in Kontakt zu bleiben.",
+            en: "A community group on Signal to connect and stay in touch."
+        },
+        img: "connect-bern-logo-white.png",
+        type: "signal",
+        link: "https://signal.group/#CjQKII_example"
     }
 ]

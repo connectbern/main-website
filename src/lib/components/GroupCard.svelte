@@ -69,10 +69,10 @@
                     <span class="top-icon" style="background-image: url('/icons/telegram.svg');"></span>
                 </a>
             </div>
-        {:else if (GroupDataObject.type === 'whatsapp' || GroupDataObject.type === 'telegram' || GroupDataObject.type === 'facebook') && !GroupDataObject.isCollection}
+        {:else if (GroupDataObject.type === 'whatsapp' || GroupDataObject.type === 'telegram' || GroupDataObject.type === 'facebook' || GroupDataObject.type === 'signal') && !GroupDataObject.isCollection}
             <!-- Single platform icon with link -->
             <div class="top-icons">
-                <a href={GroupDataObject.link} target="_blank" rel="noopener noreferrer" title={GroupDataObject.type === 'whatsapp' ? 'WhatsApp' : GroupDataObject.type === 'telegram' ? 'Telegram' : 'Facebook'}>
+                <a href={GroupDataObject.link} target="_blank" rel="noopener noreferrer" title={GroupDataObject.type === 'whatsapp' ? 'WhatsApp' : GroupDataObject.type === 'telegram' ? 'Telegram' : GroupDataObject.type === 'signal' ? 'Signal' : 'Facebook'}>
                     <span class="top-icon" style="background-image: url('/icons/{GroupDataObject.type}.svg');"></span>
                 </a>
             </div>
