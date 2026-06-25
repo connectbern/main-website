@@ -420,12 +420,56 @@ const RECURRING_EVENTS_BY_OTHERS = [
     },
     {
         title: { de: 'Patt Event', en: 'Patt Event' },
-        date: getNextWeekday(6),
-        recurring: 'monthly',
+        date: new Date(2026, 4, 23, 17, 0),
+        recurring: 'monthly-multiple',
         time: '17:00-23:00',
         description: {
-            de: 'Einmal im Monat',
-            en: 'Once a month'
+            de: 'Spieleabend von Spiukafi PATT',
+            en: 'Game night by Spiukafi PATT'
+        },
+        link: 'https://patt.be'
+    },
+    {
+        title: { de: 'Patt Event', en: 'Patt Event' },
+        date: new Date(2026, 5, 13, 17, 0),
+        recurring: 'monthly-multiple',
+        time: '17:00-23:00',
+        description: {
+            de: 'Spieleabend von Spiukafi PATT',
+            en: 'Game night by Spiukafi PATT'
+        },
+        link: 'https://patt.be'
+    },
+    {
+        title: { de: 'Patt Event', en: 'Patt Event' },
+        date: new Date(2026, 8, 12, 17, 0),
+        recurring: 'monthly-multiple',
+        time: '17:00-23:00',
+        description: {
+            de: 'Spieleabend von Spiukafi PATT',
+            en: 'Game night by Spiukafi PATT'
+        },
+        link: 'https://patt.be'
+    },
+    {
+        title: { de: 'Patt Event', en: 'Patt Event' },
+        date: new Date(2026, 9, 31, 17, 0),
+        recurring: 'monthly-multiple',
+        time: '17:00-23:00',
+        description: {
+            de: 'Spieleabend von Spiukafi PATT',
+            en: 'Game night by Spiukafi PATT'
+        },
+        link: 'https://patt.be'
+    },
+    {
+        title: { de: 'Patt Event', en: 'Patt Event' },
+        date: new Date(2026, 11, 12, 17, 0),
+        recurring: 'monthly-multiple',
+        time: '17:00-23:00',
+        description: {
+            de: 'Spieleabend von Spiukafi PATT',
+            en: 'Game night by Spiukafi PATT'
         },
         link: 'https://patt.be'
     },
