@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>CB Boardgame Night • Events • Connect Bern</title>
-	<meta name="description" content="Join us for CB Boardgame Night at Erupt Lounge in Bern. Free entry, all games provided. Wednesday, March 25, 2026 at 6:30 PM." />
+	<meta name="description" content="Join us for CB Boardgame Night at Erupt Lounge in Bern. Free entry, all games provided. Every Wednesday at 6:30 PM." />
 
 	<!-- Open Graph -->
 	<meta property="og:url" content="https://connectbern.ch/events/cb-boardgame-night" />
@@ -24,7 +24,7 @@
     const content = {
         de: {
             title: "CB Boardgame Night",
-            date: "Mittwoch, 25. März 2026",
+            date: "Jeden Mittwoch",
             time: "18:30 Uhr",
             location: "Erupt Lounge (3. Stock), Parkterrasse 14, 3012 Bern",
             free: "Kostenlos",
@@ -40,7 +40,7 @@
         },
         en: {
             title: "CB Boardgame Night",
-            date: "Wednesday, March 25, 2026",
+            date: "Every Wednesday",
             time: "6:30 PM",
             location: "Erupt Lounge (3rd floor), Parkterrasse 14, 3012 Bern",
             free: "Free entry",
