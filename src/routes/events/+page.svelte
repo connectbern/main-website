@@ -9,10 +9,12 @@
     import EventSuggestionFloatingButton from "$lib/components/EventSuggestionFloatingButton.svelte";
     import EventCalendar from "$lib/components/EventCalendar.svelte";
     import EventList from "$lib/components/EventList.svelte";
+    import AttendanceChart from "$lib/components/AttendanceChart.svelte";
     import AppBanner from "$lib/components/banner/AppBanner.svelte";
     import EventResourcesBanner from "$lib/components/banner/EventResourcesBanner.svelte";
     import TitleDescDialog from "$lib/components/TitleDescDialog.svelte";
     import { EVENT_DATA, ALL_EVENT_DATA } from "$lib/data/event.data.js";
+    import { WEEKLY_ATTENDANCE } from "$lib/data/attendance.data.js";
 
     $: lang = $currentLanguage;
 
@@ -106,6 +108,8 @@
             <EventCalendar events={filteredEvents(ALL_EVENT_DATA, filterMode)}></EventCalendar>
         {/if}
     </div>
+
+    <AttendanceChart data={WEEKLY_ATTENDANCE} />
 
     <AppBanner></AppBanner>
     <EventResourcesBanner></EventResourcesBanner>
