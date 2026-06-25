@@ -48,5 +48,23 @@ export const TOP_5_PLACES = [
             en: "A very left-wing place with a focus on concerts and cultural events. Especially dedicated to art and music concerts.",
             de: "Ein sehr linker Ort mit Fokus auf Konzerte und kulturelle Events. Besonders gewidmet Kunst und Musikkonzerten."
         }
+    },
+    {
+        name: "Caffè Bar Sempre",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8+Bar+Sempre+Bern",
+        icon: "☕",
+        description: {
+            en: "A cozy café bar in Bern with a warm, welcoming atmosphere. A lovely spot to grab a coffee, sit down with friends, and meet new people in a relaxed setting.",
+            de: "Eine gemütliche Café-Bar in Bern mit einer warmen, einladenden Atmosphäre. Ein schöner Ort, um einen Kaffee zu trinken, sich mit Freunden hinzusetzen und in entspannter Umgebung neue Leute kennenzulernen."
+        }
+    },
+    {
+        name: "Schach am Bundesplatz",
+        mapUrl: "https://www.google.com/maps/search/?api=1&query=Bundesplatz+Bern",
+        icon: "♟️",
+        description: {
+            en: "Right on Bundesplatz there's a giant chess board where people gather to play. You can just walk up, watch a game, or ask someone for a match. A simple, open way to meet locals and play some chess together outdoors.",
+            de: "Direkt auf dem Bundesplatz steht ein riesiges Schachbrett, wo sich Menschen zum Spielen treffen. Du kannst einfach vorbeikommen, einer Partie zuschauen oder jemanden um ein Spiel bitten. Eine einfache, offene Art, Einheimische kennenzulernen und gemeinsam draussen Schach zu spielen."
+        }
     }
 ];

@@ -48,9 +48,11 @@
                         <p class="placeDescription">{place.description[lang]}</p>
                     </div>
                     <div class="placeLinks">
-                        <a href={place.website} class="placeLink websiteLink" target="_blank" rel="noopener noreferrer">
-                            🌐 {t[lang]['places-website']} →
-                        </a>
+                        {#if place.website}
+                            <a href={place.website} class="placeLink websiteLink" target="_blank" rel="noopener noreferrer">
+                                🌐 {t[lang]['places-website']} →
+                            </a>
+                        {/if}
                         <a href={place.mapUrl} class="placeLink mapLink" target="_blank" rel="noopener noreferrer">
                             📍 {t[lang]['places-map']} →
                         </a>
