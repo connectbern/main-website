@@ -11,6 +11,11 @@
     <h1>Connect Bern</h1>
     <p class="subtitle">{@html t[language]["description"]}</p>
 
+    <div class="who-are-we">
+        <h2>{t[language]["who-are-we-title"]}</h2>
+        <p>{t[language]["about-highlight"]}</p>
+    </div>
+
     <div class="menu-section">
         <div class="menu-grid">
             {#each MenuData as item}
@@ -32,15 +37,6 @@
             {/each}
 
 
-        </div>
-
-        <div class="stacked-menu-list">
-            {#each StackedMenuData as item}
-                <a href="/{item.slug}" class="stacked-menu-item" title={typeof item.title === 'string' ? item.title : item.title[language]}>
-                    <span class="stacked-menu-icon" style={`background-image: url('${(item.homeImg ?? '').startsWith('/') ? item.homeImg : '/icons/' + (item.homeImg ?? item.img)}')`} />
-                    <span class="stacked-menu-title">{typeof item.title === 'string' ? item.title : item.title[language]}</span>
-                </a>
-            {/each}
         </div>
     </div>
 </section>
@@ -135,6 +131,18 @@
 
 </section>
 
+<section class="tips-section">
+    <h2>{t[language]["tips-and-more-title"]}</h2>
+    <div class="stacked-menu-list">
+        {#each StackedMenuData as item}
+            <a href="/{item.slug}" class="stacked-menu-item" title={typeof item.title === 'string' ? item.title : item.title[language]}>
+                <span class="stacked-menu-icon" style={`background-image: url('${(item.homeImg ?? '').startsWith('/') ? item.homeImg : '/icons/' + (item.homeImg ?? item.img)}')`} />
+                <span class="stacked-menu-title">{typeof item.title === 'string' ? item.title : item.title[language]}</span>
+            </a>
+        {/each}
+    </div>
+</section>
+
 <AppBanner></AppBanner>
 
 
@@ -161,6 +169,22 @@
         opacity: 1;
         display: block;
         margin-bottom: 0.25rem;
+    }
+
+    .who-are-we {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .who-are-we h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 0 0 0.5rem;
+    }
+    .who-are-we p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        opacity: 0.95;
+        margin: 0;
     }
 
     .menu-section {
@@ -232,13 +256,8 @@
     .stacked-menu-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 0.75rem;
-    }
-
-    @media (min-width: 768px) {
-        .stacked-menu-list {
-            max-width: 33%;
-        }
     }
 
     .stacked-menu-item {
@@ -267,6 +286,19 @@
 
     .stacked-menu-title {
         font-size: 0.95rem;
+    }
+
+    /* Tips & more Section */
+    .tips-section {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 1rem 1rem 3rem;
+        text-align: center;
+    }
+    .tips-section h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
     }
 
     /* Vibe Section */
