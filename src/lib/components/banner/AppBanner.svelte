@@ -43,23 +43,25 @@
 
 <style>
     .appBanner {
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: linear-gradient(135deg, rgba(108, 72, 167, 0.35), rgba(58, 152, 189, 0.35));
+        border: 1px solid rgba(255, 255, 255, 0.25);
         border-radius: 1rem;
-        padding: 1.2rem 1rem;
-        margin-bottom: 1rem;
+        padding: 1.6rem 1.2rem;
+        margin: 0 auto 2rem;
+        max-width: 700px;
         text-align: center;
+        box-shadow: 0 0 30px rgba(108, 72, 167, 0.35), 0 8px 24px rgba(0, 0, 0, 0.4);
     }
 
     .appBannerTitle {
-        font-size: 1rem;
+        font-size: 1.35rem;
         font-weight: 700;
-        margin: 0 0 0.2rem 0;
+        margin: 0 0 0.35rem 0;
     }
     .appBannerSub {
-        font-size: 0.85rem;
-        opacity: 0.7;
-        margin: 0 0 1rem 0;
+        font-size: 1rem;
+        opacity: 0.85;
+        margin: 0 0 1.2rem 0;
     }
     .storeBadges {
         display: flex;

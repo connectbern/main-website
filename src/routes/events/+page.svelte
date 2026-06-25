@@ -66,6 +66,8 @@
         </div>
     </div>
 
+    <AppBanner></AppBanner>
+
 
     {#if !isFloatingButtonHidden}
         <EventSuggestionFloatingButton></EventSuggestionFloatingButton>
@@ -107,7 +109,6 @@
         {/if}
     </div>
 
-    <AppBanner></AppBanner>
     <EventResourcesBanner></EventResourcesBanner>
 
 </section>

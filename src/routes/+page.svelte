@@ -11,6 +11,8 @@
     <h1>Connect Bern</h1>
     <p class="subtitle">{@html t[language]["description"]}</p>
 
+    <AppBanner></AppBanner>
+
     <div class="menu-section">
         <div class="menu-grid">
             {#each MenuData as item}
@@ -134,8 +136,6 @@
     </div>
 
 </section>
-
-<AppBanner></AppBanner>
 
 
 <style>
