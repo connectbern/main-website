@@ -271,8 +271,8 @@ const RECURRING_EVENTS = [
         time: '19:00',
         recurring: 'weekly',
         description: {
-            de: 'Sprachenaustausch im Connect Bern Haus - übe verschiedene Sprachen!',
-            en: 'Language exchange at Connect Bern house - practice different languages!'
+            de: 'Sprachenaustausch im Connect Bern Haus, übe verschiedene Sprachen! Findet meistens dienstags oder mittwochs statt. Manchmal fällt er aus, schau in der WhatsApp Gruppe nach dem Tag dieser Woche.',
+            en: 'Language exchange at Connect Bern house, practice different languages! Usually takes place on Tuesdays or Wednesdays. Sometimes it does not take place, check the WhatsApp group for this week\'s day.'
         },
         link: '/events/language-exchange-di-berna',
         organizer: 'connectbern'
