@@ -10,7 +10,11 @@
         facebookUrl: 'https://www.facebook.com/connectbern',
         phone: '+41 78 316 67 27',
         phoneFormatted: '+41 78 316 67 27',
-        whatsappNumber: '41783166727'
+        whatsappNumber: '41783166727',
+        telegramUrl: 'https://t.me/connectbern',
+        // TODO: maintainer to fill in real Signal and Matrix targets before merge
+        signalUrl: '',
+        matrixUrl: ''
     };
 
     let showCopiedMessage = false;
@@ -65,6 +69,31 @@
                     </svg>
                     <span>WhatsApp</span>
                 </a>
+
+                <a href="{contactInfo.telegramUrl}" target="_blank" rel="noopener noreferrer" class="contact-item telegram" aria-label="Telegram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                    <span>Telegram</span>
+                </a>
+
+                {#if contactInfo.signalUrl}
+                    <a href="{contactInfo.signalUrl}" target="_blank" rel="noopener noreferrer" class="contact-item signal" aria-label="Signal">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2.25a9.75 9.75 0 0 1 8.66 14.215l-1.08-2.66a7.5 7.5 0 0 0-2.6-9.26l-.84-.6.6-.84-1.06-.76A9.75 9.75 0 0 1 12 2.25zm-4.32.99 1.06.76-.6.84-.84.6a7.5 7.5 0 0 0-2.6 9.26l-1.08 2.66A9.75 9.75 0 0 1 7.68 3.24zM12 6a6 6 0 0 0-5.36 8.69l-.99 2.44 2.44-.99A6 6 0 1 0 12 6zm-9.46 9.79 1.04 2.55-2.55 1.04a.75.75 0 0 1-.98-.98l1.04-2.55a11.4 11.4 0 0 0 1.45-.06zm18.92 0a11.4 11.4 0 0 0 1.45.06l1.04 2.55a.75.75 0 0 1-.98.98l-2.55-1.04zm-13.3 3.49 2.66 1.08a9.75 9.75 0 0 0 6.36 0l2.66-1.08a9.75 9.75 0 0 1-11.68 0z"/>
+                        </svg>
+                        <span>Signal</span>
+                    </a>
+                {/if}
+
+                {#if contactInfo.matrixUrl}
+                    <a href="{contactInfo.matrixUrl}" target="_blank" rel="noopener noreferrer" class="contact-item matrix" aria-label="Matrix">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.632.55v22.9H2.28V24H0V0h2.28v.55zm7.043 7.26v1.157h.033c.309-.443.683-.784 1.117-1.024.433-.245.936-.365 1.504-.365.54 0 1.033.107 1.481.314.448.208.785.582 1.02 1.108.254-.374.6-.706 1.034-.992.434-.287.95-.43 1.546-.43.453 0 .872.056 1.26.167.388.11.716.286.993.53.276.245.489.559.646.951.152.392.23.863.23 1.413v5.732h-2.272v-4.851c0-.286-.01-.554-.032-.811a1.71 1.71 0 0 0-.18-.679.974.974 0 0 0-.42-.453c-.184-.115-.439-.17-.764-.17-.328 0-.594.06-.797.184a1.405 1.405 0 0 0-.466.485 1.95 1.95 0 0 0-.231.674c-.041.249-.06.502-.06.762v4.86h-2.272v-4.81c0-.254-.004-.503-.018-.747a2.108 2.108 0 0 0-.143-.677.997.997 0 0 0-.392-.49c-.176-.124-.443-.184-.795-.184-.106 0-.245.024-.42.073-.176.05-.347.14-.512.272a1.625 1.625 0 0 0-.42.555c-.115.235-.171.544-.171.926v5.082H5.483V7.81zm15.693 15.64V.55H21.72V0H24v24h-2.28v-.55z"/>
+                        </svg>
+                        <span>Matrix</span>
+                    </a>
+                {/if}
             </div>
         </div>
 
@@ -188,6 +217,30 @@
 
     .contact-item.whatsapp:hover {
         background: rgba(37, 211, 102, 0.3);
+    }
+
+    .contact-item.telegram {
+        background: rgba(42, 171, 238, 0.2);
+    }
+
+    .contact-item.telegram:hover {
+        background: rgba(42, 171, 238, 0.3);
+    }
+
+    .contact-item.signal {
+        background: rgba(58, 118, 244, 0.2);
+    }
+
+    .contact-item.signal:hover {
+        background: rgba(58, 118, 244, 0.3);
+    }
+
+    .contact-item.matrix {
+        background: rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-item.matrix:hover {
+        background: rgba(255, 255, 255, 0.22);
     }
 
     .impressum-section {
