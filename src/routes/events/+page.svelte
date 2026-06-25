@@ -12,12 +12,13 @@
     import AppBanner from "$lib/components/banner/AppBanner.svelte";
     import EventResourcesBanner from "$lib/components/banner/EventResourcesBanner.svelte";
     import TitleDescDialog from "$lib/components/TitleDescDialog.svelte";
-    import { EVENT_DATA, ALL_EVENT_DATA } from "$lib/data/event.data.js";
+    import { EVENT_DATA, ALL_EVENT_DATA, PAST_EVENT_DATA } from "$lib/data/event.data.js";
 
     $: lang = $currentLanguage;
 
     let eventView = 'list'; // 'list' | 'calendar'
     let filterMode = 'connectbern'; // 'all' or 'connectbern'
+    let timeFilter = 'upcoming'; // 'upcoming' | 'past'
     let isFloatingButtonHidden = false;
     let showWhyDifferentDialog = false;
     let showDisclaimer = true; // collapsable in mobile view
@@ -33,6 +34,16 @@
                 return eventDate >= today && !event.hidden;
             })
             .sort((a, b) => a.date - b.date);
+    });
+
+    $: pastEvents = ((events) => {
+        return events
+            .filter(event => {
+                const eventDate = new Date(event.date);
+                eventDate.setHours(0, 0, 0, 0);
+                return eventDate < today && !event.hidden;
+            })
+            .sort((a, b) => b.date - a.date);
     });
 
     $: filteredEvents = ((events, filter) => {
@@ -101,7 +112,28 @@
         </div>
 
         {#if eventView === 'list'}
-            <EventList events={presentEvents(filteredEvents(EVENT_DATA, filterMode))}></EventList>
+            <div class="filterButtons">
+                <button
+                        class="filterBtn {timeFilter === 'upcoming' ? 'active' : ''}"
+                        on:click={() => timeFilter = 'upcoming'}
+                >
+                    {t[lang].filterUpcoming}
+                </button>
+                <button
+                        class="filterBtn {timeFilter === 'past' ? 'active' : ''}"
+                        on:click={() => timeFilter = 'past'}
+                >
+                    {t[lang].filterPast}
+                </button>
+            </div>
+        {/if}
+
+        {#if eventView === 'list'}
+            {#if timeFilter === 'past'}
+                <EventList events={pastEvents(filteredEvents(PAST_EVENT_DATA, filterMode))}></EventList>
+            {:else}
+                <EventList events={presentEvents(filteredEvents(EVENT_DATA, filterMode))}></EventList>
+            {/if}
         {:else}
             <EventCalendar events={filteredEvents(ALL_EVENT_DATA, filterMode)}></EventCalendar>
         {/if}
