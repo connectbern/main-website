@@ -52,6 +52,7 @@ export const TOP_5_PLACES = [
     {
         name: "Caffè Bar Sempre",
         mapUrl: "https://www.google.com/maps/search/?api=1&query=Caff%C3%A8+Bar+Sempre+Bern",
+        website: "https://www.sempreberna.ch/",
         icon: "☕",
         description: {
             en: "A cozy café bar in Bern with a warm, welcoming atmosphere. A lovely spot to grab a coffee, sit down with friends, and meet new people in a relaxed setting.",
