@@ -240,7 +240,7 @@
         font-size: 1.5em;
         font-weight: bold;
         margin: 0;
-        color: #FFD700;
+        color: #994B00;
     }
 
     .time {
@@ -346,13 +346,13 @@
     .phoneNumber {
         font-size: 1.1em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
     }
 
     .phoneNumberLink {
         font-size: 1.3em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.6em 1.2em;
         background: rgba(255, 255, 255, 0.1);
@@ -368,7 +368,7 @@
 
     .btnCopy {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.7em 1.4em;
         font-size: 1em;
@@ -562,7 +562,7 @@
         font-size: 1.3em;
         font-style: italic;
         margin-top: 1em;
-        color: #FFD700;
+        color: #994B00;
     }
 
     .back {

@@ -115,7 +115,7 @@
     }
 
     h1 {
-        color: white;
+        color: #994B00;
     }
 
     .title-container {

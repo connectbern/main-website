@@ -410,7 +410,7 @@
         transition: all 0.2s ease;
         border: 1px solid rgba(255, 255, 255, 0.2);
         background: rgba(255, 255, 255, 0.08);
-        color: white;
+        color: #994B00;
         display: inline-block;
         width: auto;
     }

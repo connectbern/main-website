@@ -14,7 +14,7 @@
 
     #createdBy {
         position: absolute;
-        color: white;
+        color: #994B00;
         opacity: .6;
         font-size: .8rem;
         letter-spacing: 1px;

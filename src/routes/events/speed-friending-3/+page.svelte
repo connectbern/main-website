@@ -200,7 +200,7 @@
     .coolBadge {
         display: inline-block;
         background: rgba(255, 180, 100, 0.3);
-        color: white;
+        color: #994B00;
         padding: 0.4em 0.8em;
         border-radius: 2em;
         font-size: 0.9rem;
@@ -303,7 +303,7 @@
         transition: all 0.2s ease;
         border: 2px solid rgba(255, 255, 255, 0.3);
         background: rgba(255, 180, 100, 0.3);
-        color: white;
+        color: #994B00;
         display: inline-block;
         width: auto;
     }

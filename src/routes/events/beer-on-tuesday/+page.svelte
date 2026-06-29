@@ -315,7 +315,7 @@
         margin: 0;
         text-align: center;
         font-family: monospace;
-        color: #FFD700;
+        color: #994B00;
     }
 
     .registrationNote {

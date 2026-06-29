@@ -181,7 +181,7 @@
         font-size: 2.2em;
         font-weight: bold;
         margin: 0 0 0.8em 0;
-        color: #fff;
+        color: #994B00;
     }
 
     .shareSection p {
@@ -266,7 +266,7 @@
         font-size: 2em;
         font-weight: bold;
         margin: 0 0 0.8em 0;
-        color: #fff;
+        color: #994B00;
     }
 
     .donationsIntro {
@@ -319,7 +319,7 @@
     .price {
         font-size: 2.5em;
         font-weight: bold;
-        color: #fff;
+        color: #994B00;
     }
 
     .price span {
@@ -526,7 +526,7 @@
 
     .btnSecondary {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 2px solid rgba(255, 255, 255, 0.3);
     }
 
@@ -538,7 +538,7 @@
 
     .btnCopy {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.6em 1em;
         font-size: 0.9em;
@@ -555,7 +555,7 @@
 
     .btnCopy.copied {
         background: rgba(255, 255, 255, 0.3);
-        color: white;
+        color: #994B00;
         border-color: rgba(255, 255, 255, 0.6);
     }
 

@@ -108,7 +108,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1em;
-        color: white;
+        color: #994B00;
         transition: all 0.3s ease;
         text-align: center;
     }

@@ -58,13 +58,13 @@
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        color: white;
+        color: #994B00;
     }
 
     .intro-text {
         font-size: 1.1rem;
         line-height: 1.7;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
         margin-bottom: 2rem;
     }
 
@@ -87,7 +87,7 @@
         display: inline-block;
         background: rgba(255, 255, 255, 0.15);
         border: 1px solid rgba(255, 255, 255, 0.3);
-        color: white;
+        color: #994B00;
         padding: 0.5rem 1.25rem;
         border-radius: 20px;
         font-size: 0.9rem;
@@ -99,13 +99,13 @@
         font-size: 2rem;
         font-weight: bold;
         margin: 0 0 1rem 0;
-        color: white;
+        color: #994B00;
     }
 
     .offer-details {
         font-size: 1.3rem;
         margin: 1.5rem 0;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
         font-weight: 500;
     }
 
@@ -126,7 +126,7 @@
 
     .btn-primary {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 

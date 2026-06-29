@@ -68,7 +68,7 @@
     }
 
     .gradient {
-        background: linear-gradient(120deg, skyblue, rgb(162, 128, 218));
+        background: #fcf3e2;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -76,16 +76,15 @@
         position: fixed;
         z-index: -2;
         opacity: 1;
-        animation: glow 40s infinite linear;
     }
 
     .bg {
         height: 120vh;
-        background: black;
+        background: transparent;
         inset: 0;
         position: fixed;
         z-index: -2;
-        opacity: .2;
+        opacity: 0;
         pointer-events: none;
     }
 </style>

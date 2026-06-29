@@ -292,20 +292,20 @@
     }
 
     p :global(a) {
-        color: #FFD700;
+        color: #f97a01;
         text-decoration: underline;
         transition: color 0.2s ease;
         font-weight: 600;
     }
 
     p :global(a:hover) {
-        color: #FFF;
+        color: #994B00;
         text-decoration: none;
     }
 
     p :global(strong) {
         font-weight: bold;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     p :global(br) {
@@ -395,7 +395,7 @@
     .platform-explanation p {
         font-size: 1em;
         line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
         margin: 0;
     }
 

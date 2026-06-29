@@ -146,6 +146,6 @@
         transition: all .2s ease;
         height: 2px;
         width: 100%;
-        background: white;
+        background: #fcf3e2;
     }
 </style>

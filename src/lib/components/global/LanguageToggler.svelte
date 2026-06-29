@@ -43,7 +43,7 @@
     }
 
     .cntr * {
-        color: white;
+        color: #fcf3e2;
     }
 
     .cntr.dark * {

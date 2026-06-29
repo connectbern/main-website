@@ -162,11 +162,11 @@
         font-size: 2em;
         font-weight: 700;
         line-height: 1;
-        color: white;
+        color: #994B00;
     }
 
     .dateGroup.today .dayNumber {
-        color: rgb(255, 200, 100);
+        color: #994B00;
     }
 
     .monthYear {
@@ -175,7 +175,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         opacity: 0.7;
-        color: white;
+        color: #994B00;
     }
 
     .dateGroupInfo {
@@ -189,7 +189,7 @@
     .fullDate {
         font-size: 1.1em;
         font-weight: 600;
-        color: white;
+        color: #994B00;
         line-height: 1.4;
         min-height: 1.5em;
         display: -webkit-box;
@@ -206,7 +206,7 @@
     }
 
     .dateGroup.today .daysUntilBadge {
-        color: rgb(255, 200, 100);
+        color: #994B00;
     }
 
     /* Events Grid */

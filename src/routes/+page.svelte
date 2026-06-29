@@ -190,7 +190,7 @@
         border-radius: 12px;
         border: none;
         cursor: pointer;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         background: linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.04));
         box-shadow: 0 2px 6px rgba(0,0,0,.35);
@@ -252,7 +252,7 @@
         border-radius: 12px;
         border: none;
         cursor: pointer;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         background: linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.04));
         box-shadow: 0 2px 6px rgba(0,0,0,.35);
@@ -423,7 +423,7 @@
 
     .what-we-do-content strong {
         font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     .values-section {
