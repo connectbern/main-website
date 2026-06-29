@@ -345,10 +345,11 @@
         font-weight: bold;
         margin-bottom: 1rem;
         line-height: 1.6;
-        background: linear-gradient(135deg, rgba(108, 72, 167, 0.3), rgba(58, 152, 189, 0.3));
+        background: #f97a01;
+        color: #fcf3e2;
         padding: 1.5rem;
         border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(252, 243, 226, 0.3);
     }
 
     .about-intro p {
