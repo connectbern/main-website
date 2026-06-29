@@ -163,7 +163,7 @@
     }
 
     p {
-        color: white;
+        color: #994B00;
         font-size: 1em;
     }
 
@@ -183,7 +183,7 @@
     }
 
     .inputWrapper label {
-        color: white;
+        color: #994B00;
         font-weight: 500;
     }
 
@@ -226,7 +226,7 @@
         background: none;
         border: none;
         box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.444), 1px 1px 2px rgba(0, 0, 0, 0.444), -1px 5px 20px rgba(0, 0, 0, 0.255);
-        color: white;
+        color: #994B00;
         transition: all .1s ease;
     }
 

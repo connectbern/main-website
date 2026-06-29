@@ -193,7 +193,7 @@
     }
     .cntr {
         position: relative;
-        color: white;
+        color: #994B00;
         text-align: center;
         display: flex;
         flex-direction: column;

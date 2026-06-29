@@ -174,13 +174,13 @@
     }
 
     .title {
-        color: white;
+        color: #994B00;
         margin-bottom: 1rem;
         text-align: center;
     }
 
     .description {
-        color: white;
+        color: #994B00;
         line-height: 1.6;
         text-align: center;
         max-width: 800px;
@@ -245,7 +245,7 @@
     }
 
     .name {
-        color: white;
+        color: #994B00;
         margin: 0 0 0.5rem 0;
         font-size: 1.25rem;
     }
@@ -264,7 +264,7 @@
     }
 
     .social-icon {
-        color: white;
+        color: #994B00;
         opacity: 0.7;
         transition:
             opacity 0.2s ease,

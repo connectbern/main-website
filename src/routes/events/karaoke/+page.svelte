@@ -207,7 +207,7 @@
         font-weight: bold;
         transition: all 0.2s ease;
         background: rgba(66, 133, 244, 0.2);
-        color: white;
+        color: #994B00;
         border: 2px solid rgba(66, 133, 244, 0.5);
         width: fit-content;
     }

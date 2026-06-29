@@ -313,7 +313,7 @@
     .phoneLink {
         font-size: 1.5em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.5em 1em;
         background: rgba(255, 255, 255, 0.1);
@@ -366,7 +366,7 @@
         font-weight: bold;
         transition: all 0.2s ease;
         background: rgba(76, 175, 80, 0.3);
-        color: white;
+        color: #994B00;
         border: 2px solid rgba(76, 175, 80, 0.5);
         margin-top: 0.5em;
     }
@@ -386,7 +386,7 @@
         font-weight: bold;
         transition: all 0.2s ease;
         background: rgba(233, 30, 99, 0.3);
-        color: white;
+        color: #994B00;
         border: 2px solid rgba(233, 30, 99, 0.5);
     }
 

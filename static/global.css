@@ -110,7 +110,7 @@ ul {
     font-size: 1.2rem;
 }
 li {
-    color: white;
+    color: #994B00;
 }
 
 
@@ -125,7 +125,7 @@ html {
 }
 body {
     font-family: "Jost", sans-serif;
-    --text-color: rgb(8, 80, 148);
+    --text-color: #994B00;
     position: relative;
     margin: 0;
     padding: 0;
@@ -142,13 +142,13 @@ h1 {
     margin: 0 1rem;
     font-size: 2rem !important;
     font-weight: bold;
-    color: white;
+    color: #994B00;
     position: relative;
     margin-bottom: 1.5rem;
     display: inline-block;
 }
 h2, h3 {
-    color: white;
+    color: #994B00;
 }
 
 p {
@@ -156,10 +156,10 @@ p {
     padding: 0;
     line-height: 1.5em;
     font-size: 1.4rem;
-    color: white;
+    color: #994B00;
 }
 a {
-    color: white;
+    color: #994B00;
 }
 section {
     padding: 3em 1em;
@@ -168,7 +168,7 @@ section {
     gap: 1em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     margin: 0 .5em;
-    background: rgba(255, 255, 255, 0.055);
+    background: rgba(153, 75, 0, 0.045);
 }
 .topbarWrapper {
     display: flex;
@@ -187,8 +187,8 @@ form {
     width: 100%;
 }
 input, textarea {
-    color: white;
-    background: linear-gradient(rgba(255, 255, 255, 0.124), transparent);
+    color: #994B00;
+    background: rgba(255, 255, 255, 0.7);
     padding: .5em .8em;
     font-size: 1em;
     border-radius: .5em;
@@ -197,7 +197,8 @@ input, textarea {
     transition: all .1s ease;
 }
 input::placeholder {
-    color: white !important;
+    color: #994B00 !important;
+    opacity: .6;
 }
 .btn {
     background: black;

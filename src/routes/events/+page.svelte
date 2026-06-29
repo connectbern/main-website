@@ -194,14 +194,14 @@
 
         background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(79, 70, 229, 0.2));
         border: 2px solid rgba(147, 51, 234, 0.4);
-        color: white;
+        color: #994B00;
         box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
     }
 
     .highlighted-bttn {
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
         border: 2px solid rgba(255, 255, 255, 0.8);
-        color: white;
+        color: #994B00;
         box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
     }
 
@@ -223,7 +223,7 @@
         transform: scale(1.08) rotate(-2deg);
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
         border: 2px solid rgba(255, 255, 255, 0.8);
-        color: white;
+        color: #994B00;
         box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
     }
 
@@ -261,14 +261,14 @@
         font-size: 1.4em;
         font-weight: bold;
         margin: 0;
-        color: white;
+        color: #994B00;
     }
 
     .suggestEventCTA p {
         font-size: 0.95em;
         line-height: 1.5;
         margin: 0;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
         max-width: 500px;
     }
 
@@ -312,7 +312,7 @@
         font-weight: bold;
         border: 2px solid rgba(255, 255, 255, 0.2);
         background: rgba(255, 255, 255, 0.05);
-        color: white;
+        color: #994B00;
         border-radius: 2em;
         cursor: pointer;
         transition: all 0.3s ease;

@@ -198,7 +198,7 @@
     .coolBadge {
         display: inline-block;
         background: rgba(255, 180, 100, 0.3);
-        color: white;
+        color: #994B00;
         padding: 0.4em 0.8em;
         border-radius: 2em;
         font-size: 0.9rem;
@@ -282,7 +282,7 @@
         height: 28px;
         min-width: 28px;
         background: rgba(255, 180, 100, 0.4);
-        color: white;
+        color: #994B00;
         border-radius: 50%;
         font-weight: bold;
         font-size: 0.9em;
@@ -321,7 +321,7 @@
         transition: all 0.2s ease;
         border: 2px solid rgba(255, 255, 255, 0.3);
         background: rgba(255, 180, 100, 0.3);
-        color: white;
+        color: #994B00;
         display: inline-block;
         width: auto;
     }
@@ -410,7 +410,7 @@
         transition: all 0.2s ease;
         border: 1px solid rgba(255, 255, 255, 0.2);
         background: rgba(255, 255, 255, 0.08);
-        color: white;
+        color: #994B00;
         display: inline-block;
         width: auto;
     }
