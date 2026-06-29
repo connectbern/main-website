@@ -200,9 +200,9 @@ input::placeholder {
     color: white !important;
 }
 .btn {
-    background: black;
+    background: #f97a01;
     text-decoration: none;
-    color: white;
+    color: #fcf3e2;
     border-radius: 1em;
     text-transform: uppercase;
     letter-spacing: 3px;

@@ -241,12 +241,12 @@
     }
 
     .primary {
-        background: rgba(255, 255, 255, 0.578);
-        color: black;
+        background: #f97a01;
+        color: #fcf3e2;
     }
 
     .primary:not(:disabled):hover {
-        background: white;
+        background: #e06d00;
     }
 
     .success-message {

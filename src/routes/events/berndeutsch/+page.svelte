@@ -287,14 +287,14 @@
         border-radius: 0.6em;
         font-weight: bold;
         transition: all 0.2s ease;
-        border: 2px solid white;
-        background: #6C48A7;
-        color: white;
+        border: 2px solid #fcf3e2;
+        background: #f97a01;
+        color: #fcf3e2;
         width: fit-content;
     }
 
     .groupPageBtn:hover {
-        background: #5a3a8f;
+        background: #e06d00;
         transform: scale(1.05);
     }
 

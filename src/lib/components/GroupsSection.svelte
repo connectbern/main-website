@@ -172,11 +172,11 @@
     .searchInput {
         flex: 0 1 260px;
         min-width: 0;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: #f97a01;
+        border: 1px solid rgba(252, 243, 226, 0.3);
         border-radius: 2em;
         padding: 0.6em 1.2em;
-        color: white;
+        color: #fcf3e2;
         font-size: 0.95em;
         outline: none;
         -webkit-appearance: none;
@@ -185,12 +185,12 @@
     }
 
     .searchInput::placeholder {
-        color: rgba(255, 255, 255, 0.45);
+        color: rgba(252, 243, 226, 0.6);
     }
 
     .searchInput:focus {
-        border-color: rgba(255, 255, 255, 0.5);
-        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(252, 243, 226, 0.7);
+        background: #e06d00;
     }
 
     .filterPills {
