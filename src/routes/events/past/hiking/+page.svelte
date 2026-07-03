@@ -447,7 +447,7 @@
         transition: all 0.2s ease;
         border: 2px solid rgba(255, 255, 255, 0.3);
         background: rgba(100, 180, 100, 0.3);
-        color: white;
+        color: #994B00;
         display: inline-block;
         width: auto;
     }

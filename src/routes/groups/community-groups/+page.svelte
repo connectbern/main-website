@@ -162,7 +162,7 @@
         border-radius: 16px;
         overflow: hidden;
         text-decoration: none;
-        color: white;
+        color: #994B00;
         transition: background 0.2s ease, transform 0.2s ease;
     }
 

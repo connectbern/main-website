@@ -162,7 +162,7 @@
         font-size: 2em;
         font-weight: 700;
         line-height: 1;
-        color: white;
+        color: #994B00;
     }
 
     .dateGroup.today .dayNumber {
@@ -175,7 +175,7 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         opacity: 0.7;
-        color: white;
+        color: #994B00;
     }
 
     .dateGroupInfo {
@@ -189,7 +189,7 @@
     .fullDate {
         font-size: 1.1em;
         font-weight: 600;
-        color: white;
+        color: #994B00;
         line-height: 1.4;
         min-height: 1.5em;
         display: -webkit-box;

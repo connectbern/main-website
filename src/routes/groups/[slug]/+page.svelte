@@ -299,7 +299,7 @@
     }
 
     p :global(a:hover) {
-        color: #FFF;
+        color: #994B00;
         text-decoration: none;
     }
 

@@ -206,7 +206,7 @@
         text-align: center;
         font-size: 1.3em;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     .description {

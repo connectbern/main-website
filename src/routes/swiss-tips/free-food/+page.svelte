@@ -174,7 +174,7 @@
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        color: white;
+        color: #994B00;
     }
 
     .tip-card {
@@ -209,7 +209,7 @@
         margin-bottom: 1rem;
         font-size: 1.5rem;
         font-weight: bold;
-        color: white;
+        color: #994B00;
     }
 
     .icon {
@@ -231,21 +231,21 @@
         font-size: 1.5rem;
         font-weight: bold;
         margin: 0;
-        color: white;
+        color: #994B00;
     }
 
     h4 {
         font-size: 1.2rem;
         font-weight: bold;
         margin: 0 0 0.5rem 0;
-        color: white;
+        color: #994B00;
     }
 
     p {
         font-size: 1.05rem;
         line-height: 1.7;
         margin-bottom: 1rem;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
     }
 
     .btn {
@@ -265,7 +265,7 @@
 
     .btn-primary {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -276,7 +276,7 @@
 
     .btn-success {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -287,7 +287,7 @@
 
     .btn-info {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
