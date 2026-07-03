@@ -49,8 +49,8 @@ export const events = [
     },
     {
         title: "Berndeutsch Konversationsgruppe",
-        start: new Date(2025, 11, 19, 19, 0),
-        end: new Date(2025, 11, 19, 21, 0),
+        start: new Date(2025, 11, 20, 18, 0),
+        end: new Date(2025, 11, 20, 21, 0),
         extendedProps: { slug: "berndeutsch" }
     },
     {
