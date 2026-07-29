@@ -259,7 +259,15 @@
         transition: transform .08s ease, box-shadow .08s ease;
     }
 
-    .stacked-menu-item:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,255,255,.35); }
+    .stacked-menu-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .stacked-menu-item:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
 
     .stacked-menu-icon { width: 20px; height: 20px; background-size: contain; background-repeat: no-repeat; background-position: center; }
