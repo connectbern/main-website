@@ -335,17 +335,18 @@
         margin: 4rem auto;
         padding: 2rem 1rem;
         text-align: center;
+        gap: 0.5rem;
     }
 
     .about-section h2 {
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         font-weight: bold;
     }
 
     .about-intro {
         max-width: 800px;
-        margin: 0 auto 2rem;
+        margin: 0 auto 1rem;
     }
 
     .about-intro .highlight {
@@ -363,18 +364,18 @@
     .about-intro p {
         font-size: 1.2rem;
         line-height: 1.7;
-        margin: 1.5rem 0;
+        margin: 0.75rem 0;
     }
 
     .about-intro p:last-child {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .about-content {
         max-width: 800px;
-        margin: 2rem auto;
+        margin: 1rem auto;
         text-align: center;
-        padding: 2rem;
+        padding: 1rem 2rem;
         background: rgba(255, 255, 255, 0.03);
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -383,13 +384,13 @@
     .about-content p {
         font-size: 1.1rem;
         line-height: 1.8;
-        margin: 1.5rem 0;
+        margin: 0.75rem 0;
     }
 
     .about-content p:first-child {
         font-size: 1.2rem;
         font-weight: 600;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .about-content strong {
@@ -418,7 +419,7 @@
     .what-we-do-content p {
         font-size: 1.05rem;
         line-height: 1.8;
-        margin: 1.5rem 0;
+        margin: 0.75rem 0;
         text-align: left;
     }
 
@@ -501,7 +502,7 @@
         }
 
         .about-intro p:last-child {
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
 
         .about-content {
