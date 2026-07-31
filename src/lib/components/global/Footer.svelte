@@ -169,7 +169,12 @@
     .contact-item:hover {
         background: #fff;
         transform: translateY(-2px);
-        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 0 3px #fcf3e2, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-item:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #fcf3e2, 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .contact-item svg {
@@ -238,6 +243,12 @@
     .github-link:hover {
         background: #fff;
         transform: translateY(-2px);
+        box-shadow: 0 0 0 3px #fcf3e2, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .github-link:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #fcf3e2, 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .github-link svg {
