@@ -102,7 +102,7 @@
         font-weight: bold;
         text-align: center;
         margin: 0 0 1.5rem 0;
-        color: white;
+        color: #994B00;
     }
 
     .ideas-grid {
@@ -142,7 +142,7 @@
     .phone-number {
         font-size: 1.3rem;
         font-weight: bold;
-        color: white;
+        color: #994B00;
         margin: 0;
         word-break: break-all;
         padding: 0.5rem 0;
@@ -190,7 +190,7 @@
 
     .btn-copy {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.35rem 0.65rem;
         font-size: 0.75rem;
@@ -212,7 +212,7 @@
 
     .btn-copy.copied {
         background: rgba(255, 255, 255, 0.3);
-        color: white;
+        color: #994B00;
         border-color: rgba(255, 255, 255, 0.6);
     }
 

@@ -206,7 +206,7 @@
         text-align: center;
         font-size: 1.3em;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     .description {
@@ -231,7 +231,7 @@
     .contributionAmount {
         font-size: 1.4em;
         font-weight: 700;
-        color: rgb(255, 215, 100);
+        color: #994B00;
         white-space: nowrap;
         padding: 0.3em 0.6em;
         background: rgba(212, 175, 55, 0.15);

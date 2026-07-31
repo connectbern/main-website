@@ -287,14 +287,14 @@
         border-radius: 0.6em;
         font-weight: bold;
         transition: all 0.2s ease;
-        border: 2px solid white;
-        background: #6C48A7;
-        color: white;
+        border: 2px solid #fcf3e2;
+        background: #f97a01;
+        color: #fcf3e2;
         width: fit-content;
     }
 
     .groupPageBtn:hover {
-        background: #5a3a8f;
+        background: #e06d00;
         transform: scale(1.05);
     }
 
@@ -304,7 +304,7 @@
         margin: 0;
         font-size: 1.1em;
         font-weight: bold;
-        color: #FFD700;
+        color: #994B00;
     }
 
     .contactBox {
@@ -364,13 +364,13 @@
     .phoneNumber {
         font-size: 1.1em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
     }
 
     .phoneNumberLink {
         font-size: 1.3em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.6em 1.2em;
         background: rgba(255, 255, 255, 0.1);
@@ -386,7 +386,7 @@
 
     .btnCopy {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.8em 2em;
         font-size: 1.15em;
@@ -411,7 +411,7 @@
 
     .btnCopy.copied {
         background: rgba(255, 255, 255, 0.3);
-        color: white;
+        color: #994B00;
         border-color: rgba(255, 255, 255, 0.6);
     }
 

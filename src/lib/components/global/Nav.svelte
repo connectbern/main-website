@@ -109,9 +109,6 @@
         background: rgb(65, 65, 65);
         color: white;
     }
-    .navlink:hover .img {
-        filter: invert(1);
-    }
     .navlink .img {
         background-size: contain;
         background-repeat: no-repeat;
@@ -146,6 +143,6 @@
         transition: all .2s ease;
         height: 2px;
         width: 100%;
-        background: white;
+        background: #fcf3e2;
     }
 </style>

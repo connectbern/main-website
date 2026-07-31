@@ -151,9 +151,9 @@
         position: absolute;
         inset: 0;
         z-index: -1;
-        background: linear-gradient(120deg, rgb(58, 152, 189), rgb(108, 72, 167));
+        background: #f97a01;
         box-shadow: 0 0 50px rgba(255, 255, 255, 0.2) inset, 0 10px 30px rgba(0, 0, 0, 0.3);
-        opacity: 0;
+        opacity: 1;
         transition: all .2s ease;
     }
     .side-wrapper {
@@ -199,7 +199,7 @@
         }
     }
     p {
-        color: white;
+        color: #fcf3e2;
         font-weight: lighter;
         font-size: 1rem;
         margin-left: 4px !important;
@@ -226,7 +226,7 @@
         font-size: 2.4rem;
         text-transform: uppercase;
         font-weight: bold;
-        color: white;
+        color: #fcf3e2;
         transition: all .3s ease;
     }
 </style>

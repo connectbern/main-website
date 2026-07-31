@@ -93,7 +93,7 @@
         padding: 1.2em;
         text-align: center;
         text-decoration: none;
-        color: white;
+        color: #994B00;
         display: flex;
         flex-direction: column;
         gap: 0.5em;

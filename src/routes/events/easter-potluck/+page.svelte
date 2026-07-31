@@ -219,7 +219,7 @@
     .phoneLink {
         font-size: 1.5em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.5em 1em;
         background: rgba(255, 255, 255, 0.1);

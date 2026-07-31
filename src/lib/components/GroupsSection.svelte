@@ -172,11 +172,11 @@
     .searchInput {
         flex: 0 1 260px;
         min-width: 0;
-        background: rgba(255, 255, 255, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: #f97a01;
+        border: 1px solid rgba(252, 243, 226, 0.3);
         border-radius: 2em;
         padding: 0.6em 1.2em;
-        color: white;
+        color: #fcf3e2;
         font-size: 0.95em;
         outline: none;
         -webkit-appearance: none;
@@ -185,12 +185,12 @@
     }
 
     .searchInput::placeholder {
-        color: rgba(255, 255, 255, 0.45);
+        color: rgba(252, 243, 226, 0.6);
     }
 
     .searchInput:focus {
-        border-color: rgba(255, 255, 255, 0.5);
-        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(252, 243, 226, 0.7);
+        background: #e06d00;
     }
 
     .filterPills {
@@ -207,7 +207,7 @@
         border-radius: 2em;
         border: 1px solid rgba(255, 255, 255, 0.2);
         background: rgba(255, 255, 255, 0.08);
-        color: white;
+        color: #994B00;
         font-size: 0.9em;
         cursor: pointer;
         transition: background 0.15s ease, border-color 0.15s ease;
@@ -275,7 +275,7 @@
 
     .writeUsBtn {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.35);
     }
 
@@ -304,7 +304,7 @@
         border: 1px solid rgba(255, 140, 50, 0.35);
         cursor: pointer;
         text-align: left;
-        color: white;
+        color: #994B00;
         transition: background 0.2s ease, border-color 0.2s ease;
     }
 
@@ -372,7 +372,7 @@
         background: linear-gradient(135deg, rgba(255, 140, 50, 0.18), rgba(255, 100, 30, 0.1));
         border: 1px solid rgba(255, 140, 50, 0.45);
         text-decoration: none;
-        color: white;
+        color: #994B00;
         max-width: 360px;
         width: 100%;
         transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;

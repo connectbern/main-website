@@ -110,13 +110,13 @@
         font-size: 2.5em;
         font-weight: bold;
         margin: 0;
-        color: white;
+        color: #994B00;
     }
 
     .intro {
         font-size: 1.2em;
         line-height: 1.6;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
         margin: 0;
     }
 
@@ -135,7 +135,7 @@
         border: 2px solid rgba(24, 119, 242, 0.3);
         border-radius: 1em;
         text-decoration: none;
-        color: white;
+        color: #994B00;
         transition: all 0.3s ease;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }
@@ -163,13 +163,13 @@
         font-size: 1.5em;
         font-weight: bold;
         margin: 0;
-        color: white;
+        color: #994B00;
     }
 
     .group-info p {
         font-size: 1em;
         margin: 0;
-        color: rgba(255, 255, 255, 0.8);
+        color: #994B00;
     }
 
     .join-arrow {

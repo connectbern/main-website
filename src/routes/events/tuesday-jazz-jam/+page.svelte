@@ -292,7 +292,7 @@
         text-align: center;
         font-size: 1.3em;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     .description {
@@ -335,14 +335,14 @@
         font-size: 1em;
         margin: 0;
         font-weight: 500;
-        color: rgba(255, 255, 255, 0.8);
+        color: #994B00;
     }
 
     .contactName {
         font-size: 1.4em;
         margin: 0;
         font-weight: 700;
-        color: white;
+        color: #994B00;
     }
 
     .contactRow {
@@ -365,7 +365,7 @@
     .phoneNumber {
         font-size: 1.1em;
         font-weight: 600;
-        color: white;
+        color: #994B00;
         padding: 0.5em 1em;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 0.5em;
@@ -375,7 +375,7 @@
     .phoneNumberLink {
         font-size: 1.1em;
         font-weight: 600;
-        color: white;
+        color: #994B00;
         padding: 0.5em 1em;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 0.5em;
@@ -391,7 +391,7 @@
 
     .btnCopy {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.5em 0.5em;
         border-radius: 0.5em;
@@ -413,7 +413,7 @@
 
     .btnCopy.copied {
         background: rgba(76, 175, 80, 0.3);
-        color: white;
+        color: #994B00;
         border-color: rgba(76, 175, 80, 0.6);
     }
 
@@ -579,7 +579,7 @@
     .priceItem {
         font-size: 1.2em;
         font-weight: 600;
-        color: rgb(255, 215, 100);
+        color: #994B00;
         padding: 0.5em 1em;
         background: rgba(212, 175, 55, 0.15);
         border-radius: 0.8em;

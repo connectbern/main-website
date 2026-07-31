@@ -254,7 +254,7 @@
         flex-direction: column;
         gap: 1em;
         text-decoration: none;
-        color: white;
+        color: #994B00;
         transition: all 0.3s ease;
         position: relative;
     }

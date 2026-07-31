@@ -190,7 +190,7 @@
         border-radius: 12px;
         border: none;
         cursor: pointer;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         background: linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.04));
         box-shadow: 0 2px 6px rgba(0,0,0,.35);
@@ -225,8 +225,16 @@
         text-align: center;
         filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
     }
-    .menu-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,255,255,.35); }
-    .menu-icon { width: 40px; height: 40px; background-size: contain; background-repeat: no-repeat; background-position: center; filter: invert(1); }
+    .menu-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-card:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .menu-icon { width: 40px; height: 40px; background-size: contain; background-repeat: no-repeat; background-position: center; }
     .menu-title { font-size: 1rem; }
 
     .stacked-menu-list {
@@ -252,17 +260,25 @@
         border-radius: 12px;
         border: none;
         cursor: pointer;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         background: linear-gradient(rgba(255,255,255,.12), rgba(255,255,255,.04));
         box-shadow: 0 2px 6px rgba(0,0,0,.35);
         transition: transform .08s ease, box-shadow .08s ease;
     }
 
-    .stacked-menu-item:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,255,255,.35); }
+    .stacked-menu-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .stacked-menu-item:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
 
 
-    .stacked-menu-icon { width: 20px; height: 20px; background-size: contain; background-repeat: no-repeat; background-position: center; filter: invert(1); }
+    .stacked-menu-icon { width: 20px; height: 20px; background-size: contain; background-repeat: no-repeat; background-position: center; }
 
 
     .stacked-menu-title {
@@ -327,17 +343,18 @@
         margin: 4rem auto;
         padding: 2rem 1rem;
         text-align: center;
+        gap: 0.5rem;
     }
 
     .about-section h2 {
         font-size: 2.5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         font-weight: bold;
     }
 
     .about-intro {
         max-width: 800px;
-        margin: 0 auto 2rem;
+        margin: 0 auto 1rem;
     }
 
     .about-intro .highlight {
@@ -345,27 +362,28 @@
         font-weight: bold;
         margin-bottom: 1rem;
         line-height: 1.6;
-        background: linear-gradient(135deg, rgba(108, 72, 167, 0.3), rgba(58, 152, 189, 0.3));
+        background: #f97a01;
+        color: #fcf3e2;
         padding: 1.5rem;
         border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(252, 243, 226, 0.3);
     }
 
     .about-intro p {
         font-size: 1.2rem;
         line-height: 1.7;
-        margin: 1.5rem 0;
+        margin: 0.75rem 0;
     }
 
     .about-intro p:last-child {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .about-content {
         max-width: 800px;
-        margin: 2rem auto;
+        margin: 1rem auto;
         text-align: center;
-        padding: 2rem;
+        padding: 1rem 2rem;
         background: rgba(255, 255, 255, 0.03);
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -374,13 +392,13 @@
     .about-content p {
         font-size: 1.1rem;
         line-height: 1.8;
-        margin: 1.5rem 0;
+        margin: 0.75rem 0;
     }
 
     .about-content p:first-child {
         font-size: 1.2rem;
         font-weight: 600;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .about-content strong {
@@ -409,7 +427,7 @@
     .what-we-do-content p {
         font-size: 1.05rem;
         line-height: 1.8;
-        margin: 1.5rem 0;
+        margin: 0.75rem 0;
         text-align: left;
     }
 
@@ -423,7 +441,7 @@
 
     .what-we-do-content strong {
         font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     .values-section {
@@ -492,7 +510,7 @@
         }
 
         .about-intro p:last-child {
-            margin-top: 2rem;
+            margin-top: 1rem;
         }
 
         .about-content {

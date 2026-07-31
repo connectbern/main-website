@@ -325,7 +325,7 @@
         text-align: center;
         font-size: 1.3em;
         font-weight: 600;
-        color: rgba(255, 255, 255, 0.95);
+        color: #994B00;
     }
 
     .description {
@@ -450,7 +450,7 @@
         font-size: 1.3em;
         font-weight: bold;
         margin: 0;
-        color: rgba(255, 200, 100, 1);
+        color: #994B00;
     }
 
     .whyCostButton {
@@ -774,7 +774,7 @@
 
     .btnCopy {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
         padding: 0.6em 1em;
         font-size: 0.9em;
@@ -864,7 +864,7 @@
     .phoneLink {
         font-size: 1.3em;
         font-weight: bold;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.5em 1em;
         background: rgba(255, 255, 255, 0.1);

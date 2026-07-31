@@ -290,7 +290,7 @@
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        color: white;
+        color: #994B00;
     }
 
     .warning-box {
@@ -317,7 +317,7 @@
         font-size: 1.8rem;
         font-weight: bold;
         margin-bottom: 1.5rem;
-        color: white;
+        color: #994B00;
         padding-bottom: 0.5rem;
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     }
@@ -351,14 +351,14 @@
         font-size: 1.3rem;
         font-weight: bold;
         margin: 0 0 1rem 0;
-        color: white;
+        color: #994B00;
     }
 
     p {
         font-size: 1.05rem;
         line-height: 1.7;
         margin-bottom: 1rem;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
     }
 
     .sub-text {
@@ -391,7 +391,7 @@
 
     .btn-primary {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -402,7 +402,7 @@
 
     .btn-success {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -413,7 +413,7 @@
 
     .btn-info {
         background: rgba(255, 255, 255, 0.1);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
@@ -424,7 +424,7 @@
 
     .btn-secondary {
         background: rgba(255, 255, 255, 0.15);
-        color: white;
+        color: #994B00;
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
@@ -451,14 +451,14 @@
     }
 
     .inline-link {
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
         text-decoration: underline;
         text-decoration-color: rgba(255, 255, 255, 0.5);
         transition: all 0.2s ease;
     }
 
     .inline-link:hover {
-        color: white;
+        color: #994B00;
         text-decoration-color: rgba(255, 255, 255, 0.8);
     }
 

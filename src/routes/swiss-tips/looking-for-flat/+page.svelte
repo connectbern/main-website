@@ -179,12 +179,12 @@
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        color: white;
+        color: #994B00;
     }
 
     .subtitle {
         font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.8);
+        color: #994B00;
         line-height: 1.6;
     }
 
@@ -205,7 +205,7 @@
         padding: 1.25rem;
         text-decoration: none;
         transition: all 0.2s ease;
-        color: white;
+        color: #994B00;
     }
 
     .platform-card:hover {
@@ -246,12 +246,12 @@
         font-size: 1.05rem;
         font-weight: 600;
         margin: 0;
-        color: white;
+        color: #994B00;
     }
 
     .platform-note {
         font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.75);
+        color: #994B00;
         margin: 0.5rem 0 0 0;
         font-style: normal;
         line-height: 1.5;
@@ -259,13 +259,13 @@
 
     .arrow {
         font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.4);
+        color: #994B00;
         transition: transform 0.2s ease;
     }
 
     .platform-card:hover .arrow {
         transform: translateX(3px);
-        color: rgba(255, 255, 255, 0.7);
+        color: #994B00;
     }
 
     .accommodation-section {
@@ -278,12 +278,12 @@
         font-size: 1.6rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        color: white;
+        color: #994B00;
     }
 
     .section-subtitle {
         font-size: 1.05rem;
-        color: rgba(255, 255, 255, 0.8);
+        color: #994B00;
         margin-bottom: 2rem;
         line-height: 1.6;
     }
@@ -335,7 +335,7 @@
         font-size: 1.1rem;
         font-weight: 600;
         margin: 0;
-        color: white;
+        color: #994B00;
         text-align: center;
     }
 
@@ -351,7 +351,7 @@
         font-size: 1.05rem;
         line-height: 1.7;
         margin: 0;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
     }
 
     .inline-link {
@@ -389,7 +389,7 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 6px;
         text-decoration: none;
-        color: white;
+        color: #994B00;
         font-size: 0.9rem;
         transition: all 0.2s ease;
     }
@@ -408,7 +408,7 @@
 
     .feedback-text {
         font-size: 1.05rem;
-        color: rgba(255, 255, 255, 0.9);
+        color: #994B00;
         margin-bottom: 1.5rem;
         line-height: 1.7;
     }

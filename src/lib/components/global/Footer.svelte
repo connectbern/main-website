@@ -54,7 +54,7 @@
 
                 <a href="/contact" class="contact-item" title='Contact'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-                        <path fill="rgb(255, 255, 255)" d="M1.706 16.556c0.192-0.684 0.553-1.308 1.059-1.814l8.494-8.494 1.589-1.589c0.778 0.778 2.405 2.405 4.875 4.875l1.589 1.589-1.589 1.589-8.494 8.494c-0.502 0.502-1.129 0.868-1.814 1.059L1.425 23.904c-0.389 0.108-0.811 0-1.097-0.291s-0.399-0.708-0.291-1.097l1.669-6.96zm2.606-0.173c-0.206 0.22-0.356 0.488-0.436 0.778l-1.13 4.073 4.073-1.13c0.3-0.084 0.572-0.239 0.797-0.455l-3.304-3.266zm16.594-6.844c-0.778-0.778-2.405-2.405-4.875-4.875L14.438 3.07c1.238-1.238 1.934-1.934 2.098-2.098C17.166 0.328 18.023-0.028 18.938-0.028s1.772 0.356 2.402 1.0l1.673 1.673c0.644 0.63 1.0 1.487 1.0 2.402s-0.356 1.772-1.0 2.402c-0.164 0.164-0.86 0.86-2.098 2.098z"/>
+                        <path fill="#f97a01" d="M1.706 16.556c0.192-0.684 0.553-1.308 1.059-1.814l8.494-8.494 1.589-1.589c0.778 0.778 2.405 2.405 4.875 4.875l1.589 1.589-1.589 1.589-8.494 8.494c-0.502 0.502-1.129 0.868-1.814 1.059L1.425 23.904c-0.389 0.108-0.811 0-1.097-0.291s-0.399-0.708-0.291-1.097l1.669-6.96zm2.606-0.173c-0.206 0.22-0.356 0.488-0.436 0.778l-1.13 4.073 4.073-1.13c0.3-0.084 0.572-0.239 0.797-0.455l-3.304-3.266zm16.594-6.844c-0.778-0.778-2.405-2.405-4.875-4.875L14.438 3.07c1.238-1.238 1.934-1.934 2.098-2.098C17.166 0.328 18.023-0.028 18.938-0.028s1.772 0.356 2.402 1.0l1.673 1.673c0.644 0.63 1.0 1.487 1.0 2.402s-0.356 1.772-1.0 2.402c-0.164 0.164-0.86 0.86-2.098 2.098z"/>
                     </svg>
                     <span>{t[language]["footer.contact-form"]}</span>
                 </a>
@@ -115,9 +115,8 @@
 
 <style>
     footer {
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: #f97a01;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         margin-top: 100px;
         padding: 3em 2em 2em;
         width: 100%;
@@ -158,42 +157,40 @@
         display: flex;
         align-items: center;
         gap: 0.5em;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.8em 1.2em;
         border-radius: 0.5em;
-        background: rgba(255, 255, 255, 0.1);
+        background: #fcf3e2;
         transition: all 0.3s ease;
-        box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
     }
 
     .contact-item:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: #fff;
         transform: translateY(-2px);
-        box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.3), 1px 1px 4px rgba(0, 0, 0, 0.4), 0 4px 15px rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 0 3px #994B00, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-item:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #994B00, 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .contact-item svg {
         flex-shrink: 0;
         display: block;
+        color: #f97a01;
     }
 
     .contact-item span {
         line-height: 1;
     }
 
-    .contact-item.whatsapp {
-        background: rgba(37, 211, 102, 0.2);
-    }
-
-    .contact-item.whatsapp:hover {
-        background: rgba(37, 211, 102, 0.3);
-    }
-
     .impressum-section {
         margin-top: 2em;
         padding-top: 1.5em;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
         justify-content: center;
         max-width: 1200px;
@@ -202,20 +199,20 @@
     }
 
     .impressum-link {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.85);
         text-decoration: none;
         font-size: 0.9em;
         transition: color 0.2s ease;
     }
 
     .impressum-link:hover {
-        color: rgba(255, 255, 255, 0.9);
+        color: #fff;
     }
 
     .open-source-section {
         margin-top: 3em;
         padding-top: 2em;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
         justify-content: center;
         max-width: 1200px;
@@ -228,12 +225,12 @@
         display: flex;
         align-items: center;
         gap: 0.75em;
-        color: rgba(255, 255, 255, 0.8);
+        color: #994B00;
         text-decoration: none;
         font-size: 0.9em;
         padding: 0.75em 1.25em;
         border-radius: 0.5em;
-        background: rgba(255, 255, 255, 0.05);
+        background: #fcf3e2;
         transition: all 0.3s ease;
         max-width: 600px;
         text-align: left;
@@ -244,13 +241,19 @@
     }
 
     .github-link:hover {
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
+        background: #fff;
         transform: translateY(-2px);
+        box-shadow: 0 0 0 3px #994B00, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .github-link:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #994B00, 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
     .github-link svg {
         flex-shrink: 0;
+        color: #f97a01;
     }
 
     .toast {
