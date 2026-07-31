@@ -225,7 +225,15 @@
         text-align: center;
         filter: drop-shadow(0 1px 2px rgba(0,0,0,.3));
     }
-    .menu-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(255,255,255,.35); }
+    .menu-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-card:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px #f97a01, 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
     .menu-icon { width: 40px; height: 40px; background-size: contain; background-repeat: no-repeat; background-position: center; }
     .menu-title { font-size: 1rem; }
 
