@@ -115,9 +115,8 @@
 
 <style>
     footer {
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(10px);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: #f97a01;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         margin-top: 100px;
         padding: 3em 2em 2em;
         width: 100%;
@@ -158,19 +157,19 @@
         display: flex;
         align-items: center;
         gap: 0.5em;
-        color: white;
+        color: #994B00;
         text-decoration: none;
         padding: 0.8em 1.2em;
         border-radius: 0.5em;
-        background: rgba(255, 255, 255, 0.1);
+        background: #fcf3e2;
         transition: all 0.3s ease;
-        box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.2), 1px 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
     }
 
     .contact-item:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: #fff;
         transform: translateY(-2px);
-        box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.3), 1px 1px 4px rgba(0, 0, 0, 0.4), 0 4px 15px rgba(255, 255, 255, 0.1);
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .contact-item svg {
@@ -183,18 +182,10 @@
         line-height: 1;
     }
 
-    .contact-item.whatsapp {
-        background: rgba(37, 211, 102, 0.2);
-    }
-
-    .contact-item.whatsapp:hover {
-        background: rgba(37, 211, 102, 0.3);
-    }
-
     .impressum-section {
         margin-top: 2em;
         padding-top: 1.5em;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
         justify-content: center;
         max-width: 1200px;
@@ -203,20 +194,20 @@
     }
 
     .impressum-link {
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 0.85);
         text-decoration: none;
         font-size: 0.9em;
         transition: color 0.2s ease;
     }
 
     .impressum-link:hover {
-        color: rgba(255, 255, 255, 0.9);
+        color: #fff;
     }
 
     .open-source-section {
         margin-top: 3em;
         padding-top: 2em;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         display: flex;
         justify-content: center;
         max-width: 1200px;
@@ -229,12 +220,12 @@
         display: flex;
         align-items: center;
         gap: 0.75em;
-        color: rgba(255, 255, 255, 0.8);
+        color: #994B00;
         text-decoration: none;
         font-size: 0.9em;
         padding: 0.75em 1.25em;
         border-radius: 0.5em;
-        background: rgba(255, 255, 255, 0.05);
+        background: #fcf3e2;
         transition: all 0.3s ease;
         max-width: 600px;
         text-align: left;
@@ -245,8 +236,7 @@
     }
 
     .github-link:hover {
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
+        background: #fff;
         transform: translateY(-2px);
     }
 
