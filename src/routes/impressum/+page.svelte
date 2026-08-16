@@ -5,6 +5,7 @@
 
 <script>
     import { currentLanguage } from '$lib/stores/languageStore';
+    import { legal } from '$lib/data/legal';
 
     $: lang = $currentLanguage;
 </script>
@@ -15,19 +16,19 @@
     <div class="legalBox">
         <div class="legalGrid">
             <span class="legalKey">{lang === 'de' ? 'Name' : 'Name'}</span>
-            <span>Connect Bern</span>
+            <span>{legal.name}</span>
 
             <span class="legalKey">{lang === 'de' ? 'Rechtsform' : 'Legal form'}</span>
-            <span>{lang === 'de' ? 'Verein' : 'Association (Verein)'}</span>
+            <span>{lang === 'de' ? legal.legalForm.de : legal.legalForm.en}</span>
 
             <span class="legalKey">{lang === 'de' ? 'Adresse' : 'Address'}</span>
-            <span>Gutenbergstrasse 27, 3011 Bern</span>
+            <span>{legal.address}</span>
 
             <span class="legalKey">{lang === 'de' ? 'E-Mail' : 'Email'}</span>
-            <a href="mailto:connectbern@gmail.com">connectbern@gmail.com</a>
+            <a href="mailto:{legal.email}">{legal.email}</a>
 
             <span class="legalKey">{lang === 'de' ? 'Telefon' : 'Phone'}</span>
-            <a href="tel:+41783166727">+41 78 316 67 27</a>
+            <a href="tel:{legal.phoneTel}">{legal.phone}</a>
         </div>
     </div>
 </section>
